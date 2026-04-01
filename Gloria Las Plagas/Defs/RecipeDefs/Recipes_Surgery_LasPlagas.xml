@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>CCDevelopment_LasPlagas_Surgery</defName>
+		<label>las Plagas surgery</label>
+		<description>Infect a creature with the Las Plagas parasite</description>
+		<workerClass>Recipe_AddHediff</workerClass>
+		<addsHediff>CCDevelopment_LasPlagas_Infection</addsHediff>
+		<jobString>Infecting TargetA.</jobString>
+		<workAmount>2000</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<targetsBodyPart>false</targetsBodyPart>
+		<isViolation>true</isViolation>
+		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<developmentalStageFilter>Adult</developmentalStageFilter> <!-- Las Plagas kills every child -->
+		<surgeryOutcomeEffect IsNull="True" /> <!-- Always succeeds -->
+		<recipeUsers>
+		<li>Human</li>
+		</recipeUsers>
+		
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CCDevelopment_LasPlagas_Embryo</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CCDevelopment_LasPlagas_Embryo</li>
+			</thingDefs>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+</Defs>
