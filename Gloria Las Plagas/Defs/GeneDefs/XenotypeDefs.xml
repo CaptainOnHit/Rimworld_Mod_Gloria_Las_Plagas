@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>CCDevelopment_LasPlagas_Ganado</defName>
+		<label>ganado</label>
+		<description>tier 0 plaga dude</description>
+		<displayPriority>1001</displayPriority>
+		<inheritable>false</inheritable>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>RobustDigestion</li>
+			<li>WoundHealing_Fast</li>
+			<li>Sterile</li>
+			<li>Superclotting</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudePoor_Construction</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudeTerrible_Social</li>
+			<li>AptitudeTerrible_Intellectual</li>
+
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>CCDevelopment_LasPlagas_Guadana</defName>
+		<label>guadaña</label>
+		<description>tier 0 plaga dude</description>
+		<displayPriority>1001</displayPriority>
+		<iconPath>UI/Icons/Xenotypes/Guadana</iconPath>
+		<inheritable>false</inheritable>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>RobustDigestion</li>
+			<li>WoundHealing_Fast</li>
+			<li>Sterile</li>
+			<li>Superclotting</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudePoor_Construction</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudeTerrible_Social</li>
+			<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeDef>
+		<defName>CCDevelopment_LasPlagas_Mandibula</defName>
+		<label>mandíbula</label>
+		<description>tier 0 plaga dude</description>
+		<displayPriority>1001</displayPriority>
+		<iconPath>UI/Icons/Xenotypes/Mandibula</iconPath>
+		<inheritable>false</inheritable>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>RobustDigestion</li>
+			<li>WoundHealing_Fast</li>
+			<li>Sterile</li>
+			<li>Superclotting</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudePoor_Construction</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudeTerrible_Social</li>
+			<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>CCDevelopment_LasPlagas_Arana</defName>
+		<label>araña</label>
+		<description>tier 0 plaga dude</description>
+		<displayPriority>1001</displayPriority>
+		<inheritable>false</inheritable>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>RobustDigestion</li>
+			<li>WoundHealing_Fast</li>
+			<li>Sterile</li>
+			<li>Superclotting</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudePoor_Construction</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudeTerrible_Social</li>
+			<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+</Defs>

@@ -14,6 +14,18 @@
 			<li Class="HediffCompProperties_Immunizable">
 				<severityPerDayNotImmune>10</severityPerDayNotImmune>
 			</li>
+			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_XenotypeTransform">
+				<xenotypes>
+					<li>CCDevelopment_LasPlagas_Ganado</li>
+					<li>CCDevelopment_LasPlagas_Guadana</li>
+					<li>CCDevelopment_LasPlagas_Mandibula</li>
+				</xenotypes>
+				<probabilities>
+					<li>0.60</li>
+					<li>0.30</li>
+					<li>0.10</li>
+				</probabilities>
+			</li>
 		</comps>
 		<stages>
 			<li>
@@ -50,5 +62,5 @@
 				</capMods>
 			</li>
 		</stages>
-		</HediffDef>
+	</HediffDef>
 </Defs>
