@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>CCDevelopment_LasPlagas_Embryo</defName>
+		<label>plaga embryo</label>
+		    <uiIconForStackCount>1</uiIconForStackCount>
+			<soundInteract>Standard_Drop</soundInteract>
+			<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>25</stackLimit>
+		 <statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<thingCategories>
+			<li>Medicine</li>
+		</thingCategories>
+		<statBases>
+		<Mass>0.50</Mass>
+		</statBases>
+	</ThingDef>
+
+</Defs>
