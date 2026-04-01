@@ -55,8 +55,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HediffCompProperties_XenotypeTransform.cs" />
-    <Compile Include="HediffComp_XenotypeTransform.cs" />
+    <Compile Include="HediffCompProperties_PlagasParasite_Subordinate .cs" />
+    <Compile Include="HediffCompProperties_LasPlagasTransform.cs" />
+    <Compile Include="HediffComp_PlagasParasite_Subordinate.cs" />
+    <Compile Include="HediffComp_LasPlagasTransform.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

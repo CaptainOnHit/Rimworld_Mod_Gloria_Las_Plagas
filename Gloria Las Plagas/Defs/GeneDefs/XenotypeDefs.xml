@@ -6,6 +6,7 @@
 		<label>ganado</label>
 		<description>tier 0 plaga dude</description>
 		<displayPriority>1001</displayPriority>
+		<iconPath>UI/Icons/Xenotypes/Ganado</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<genes>

@@ -2,11 +2,11 @@
 
 <Defs>
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>CCDevelopment_LasPlagas_Surgery</defName>
+		<defName>CCDevelopment_LasPlagas_Surgery_Subordinate</defName>
 		<label>las Plagas surgery</label>
 		<description>Infect a creature with the Las Plagas parasite</description>
 		<workerClass>Recipe_AddHediff</workerClass>
-		<addsHediff>CCDevelopment_LasPlagas_Infection</addsHediff>
+		<addsHediff>CCDevelopment_LasPlagas_Infection_Subordinate</addsHediff>
 		<jobString>Infecting TargetA.</jobString>
 		<workAmount>2000</workAmount>
 		<hideBodyPartNames>true</hideBodyPartNames>

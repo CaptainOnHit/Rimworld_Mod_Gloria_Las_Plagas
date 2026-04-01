@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<HediffDef>
-		<defName>CCDevelopment_LasPlagas_LasPlagaParasite_Tier0</defName>
-		<label>plagas parasite tier 0</label>
+		<defName>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier0</defName>
+		<label>plagas Parasite (Ganado)</label>
 		<description>SUSSY</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_PlagasParasite_Subordinate">
+				<currentStagePlagaXenotype>CCDevelopment_LasPlagas_Ganado</currentStagePlagaXenotype>
+				<currentPlagaParasiteStage>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier0</currentPlagaParasiteStage>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier1</defName>
+		<label>plagas Parasite (Guadana)</label>
+		<description>SUSSY</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_PlagasParasite_Subordinate">
+				<currentStagePlagaXenotype>CCDevelopment_LasPlagas_Guadana</currentStagePlagaXenotype>
+				<currentPlagaParasiteStage>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier1</currentPlagaParasiteStage>				
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier2</defName>
+		<label>plagas Parasite (Mandíbula)</label>
+		<description>SUSSY</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_PlagasParasite_Subordinate">
+				<currentStagePlagaXenotype>CCDevelopment_LasPlagas_Mandibula</currentStagePlagaXenotype>
+				<currentPlagaParasiteStage>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier2</currentPlagaParasiteStage>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier3</defName>
+		<label>plagas Parasite (Araña)</label>
+		<description>SUSSY</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_PlagasParasite_Subordinate">
+				<currentPlagaParasiteStage>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier3</currentPlagaParasiteStage>
+				<currentStagePlagaXenotype>CCDevelopment_LasPlagas_Arana</currentStagePlagaXenotype>
+			</li>
+		</comps>
 	</HediffDef>
 </Defs>

@@ -8,14 +8,15 @@ using Verse;
 
 namespace CCDevelopment.LasPlagas
 {
-    public class HediffCompProperties_XenotypeTransform : HediffCompProperties
+    public class HediffCompProperties_LasPlagasTransform : HediffCompProperties
     {
-        public List<XenotypeDef> xenotypes;
+        public List<HediffDef> plagaStages;
         public List<float> probabilities;
 
-        public HediffCompProperties_XenotypeTransform()
+        public HediffCompProperties_LasPlagasTransform()
         {
-            compClass = typeof(HediffComp_XenotypeTransform);
+            compClass = typeof(HediffComp_LasPlagasTransform);
         }
+
     }
 }

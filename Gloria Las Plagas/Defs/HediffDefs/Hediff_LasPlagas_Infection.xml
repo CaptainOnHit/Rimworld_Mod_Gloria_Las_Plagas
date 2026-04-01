@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<HediffDef Parentname="InfectionBase">
-		<defName>CCDevelopment_LasPlagas_Infection</defName>
+		<defName>CCDevelopment_LasPlagas_Infection_Subordinate</defName>
 		<label>las Plagas</label>
 		<description>AMONGUS</description>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -14,12 +14,12 @@
 			<li Class="HediffCompProperties_Immunizable">
 				<severityPerDayNotImmune>10</severityPerDayNotImmune>
 			</li>
-			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_XenotypeTransform">
-				<xenotypes>
-					<li>CCDevelopment_LasPlagas_Ganado</li>
-					<li>CCDevelopment_LasPlagas_Guadana</li>
-					<li>CCDevelopment_LasPlagas_Mandibula</li>
-				</xenotypes>
+			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_LasPlagasTransform">
+				<plagaStages>
+					<li>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier0</li>
+					<li>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier1</li>
+					<li>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier2</li>
+				</plagaStages>
 				<probabilities>
 					<li>0.60</li>
 					<li>0.30</li>
