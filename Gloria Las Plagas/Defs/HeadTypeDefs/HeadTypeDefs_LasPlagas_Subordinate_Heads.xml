@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HeadTypeDef>
+		<defName>CCDevelopment_LasPlagas_Guadana</defName>
+		<label>guadana head</label>
+		<graphicPath>Things/Pawns/Heads/Guadana_head1</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>CCDevelopment_LasPlagas_Guadana_Head_Gene</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+</Defs>

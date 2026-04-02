@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>CCDevelopment_LasPlagas_Guadana_Head_Gene</defName>
+		<label>guadana hosted head</label>
+		<description>guadana out :c</description>
+		<forcedHeadTypes><li>CCDevelopment_LasPlagas_Guadana</li></forcedHeadTypes>
+		
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Bald</li>
+			</tags>
+		</hairTagFilter>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+		</beardTagFilter>
+	</GeneDef>
+	
+
+</Defs>

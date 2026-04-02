@@ -34,6 +34,7 @@
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<genes>
+			<li>CCDevelopment_LasPlagas_Guadana_Head_Gene</li>
 			<li>RobustDigestion</li>
 			<li>WoundHealing_Fast</li>
 			<li>Sterile</li>
