@@ -7,4 +7,12 @@
 	<description>This mod adds Las Plagas as a possible Operation, which infects the Host with Las Plagas.
 	After the infection is completed the pawn gets recruited (if not happend so far) and labotamizes it, so it can only perform trivial work.
 	</description>
+	<modDependencies>
+    <li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+	</modDependencies>
 </ModMetaData>

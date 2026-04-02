@@ -3,3 +3,4 @@ M:\Steam\steamapps\common\RimWorld\Mods\GloriaLasPlagasGitRepo\Gloria Las Plagas
 M:\Steam\steamapps\common\RimWorld\Mods\GloriaLasPlagasGitRepo\Gloria Las Plagas\Source\GloriaLasPlagas\GloriaLasPlagas\obj\Debug\GloriaLasPlagas.csproj.CoreCompileInputs.cache
 M:\Steam\steamapps\common\RimWorld\Mods\GloriaLasPlagasGitRepo\Gloria Las Plagas\Source\GloriaLasPlagas\GloriaLasPlagas\obj\Debug\GloriaLasPlagas.dll
 M:\Steam\steamapps\common\RimWorld\Mods\GloriaLasPlagasGitRepo\Gloria Las Plagas\Assemblies\GloriaLasPlagas.dll
+M:\Steam\steamapps\common\RimWorld\Mods\GloriaLasPlagasGitRepo\Gloria Las Plagas\Source\GloriaLasPlagas\GloriaLasPlagas\obj\Debug\GloriaLa.A78D14FB.Up2Date

@@ -22,7 +22,6 @@ namespace CCDevelopment.LasPlagas
         public override void CompPostMake()
         {
             Pawn.genes?.SetXenotype(Props.currentStagePlagaXenotype);
-
             nextTierTick = Find.TickManager.TicksGame + (daysUntilNextTier * ticksPerDay);
         }
 
