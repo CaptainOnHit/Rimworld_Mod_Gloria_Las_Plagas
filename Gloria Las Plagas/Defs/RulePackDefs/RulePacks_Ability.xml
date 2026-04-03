@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>CCDevelopment_LasPlagas_EatHeadEvent</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_logentry(p=1.0)->[INITIATOR_definite] ate [SUBJECT_definite]'s head </li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
+
+  

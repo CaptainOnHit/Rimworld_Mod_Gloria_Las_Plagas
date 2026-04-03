@@ -27,7 +27,7 @@ namespace CCDevelopment.LasPlagas
             float scale = 1.6f;
             Vector3 pos = matrix.GetColumn(3); //keep positions
             var rotation = matrix.rotation;
-            var headOffset = rotation *  new Vector3(0, 0, 0.35f);
+            var headOffset = rotation *  new Vector3(0, 1, 0.35f);
             pos += headOffset;
             matrix = Matrix4x4.TRS(
                 pos,

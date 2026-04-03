@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityDef>
+		<defName>CCDevelopment_LasPlagas_EatHead</defName>
+		<label>Eat Head</label>
+		<description>sussy head</description>
+		<cooldownTicksRange>500</cooldownTicksRange>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
+		<ai_IsOffensive>true</ai_IsOffensive>
+		<aiCanUse>false</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<range>-1</range>
+			<drawAimPie>true</drawAimPie>
+			<warmupTime>2</warmupTime>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetBloodfeeders>false</canTargetBloodfeeders>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetAnimals>false</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CCDevelopment.LasPlagas.CompProperties_AbilityEffect_EatHead"></li>
+		</comps>
+	</AbilityDef>
+
+</Defs>

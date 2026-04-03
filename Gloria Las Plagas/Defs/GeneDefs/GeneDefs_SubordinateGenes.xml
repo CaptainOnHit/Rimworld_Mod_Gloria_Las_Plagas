@@ -5,7 +5,7 @@
 		<label>guadana hosted head</label>
 		<description>guadana out :c</description>
 		<forcedHeadTypes><li>CCDevelopment_LasPlagas_Guadana</li></forcedHeadTypes>
-		
+
 		<hairTagFilter>
 			<whitelist>true</whitelist>
 			<tags>
@@ -25,7 +25,12 @@
 			<label>mandibula hosted head</label>
 			<description>mandibula out :c</description>
 			<forcedHeadTypes><li>CCDevelopment_LasPlagas_Mandibula</li></forcedHeadTypes>
-			
+			<abilities>
+            <li>CCDevelopment_LasPlagas_EatHead</li>
+			</abilities>
+			<exclusionTags>
+				<li>EyeColor</li>
+			</exclusionTags>
 			<hairTagFilter>
 				<whitelist>true</whitelist>
 				<tags>

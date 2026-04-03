@@ -39,16 +39,4 @@
 		</comps>
 	</HediffDef>
 	
-	<HediffDef>
-		<defName>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier3</defName>
-		<label>plagas Parasite (Araña)</label>
-		<description>SUSSY</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<comps>
-			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_PlagasParasite_Subordinate">
-				<currentPlagaParasiteStage>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier3</currentPlagaParasiteStage>
-				<currentStagePlagaXenotype>CCDevelopment_LasPlagas_Arana</currentStagePlagaXenotype>
-			</li>
-		</comps>
-	</HediffDef>
 </Defs>

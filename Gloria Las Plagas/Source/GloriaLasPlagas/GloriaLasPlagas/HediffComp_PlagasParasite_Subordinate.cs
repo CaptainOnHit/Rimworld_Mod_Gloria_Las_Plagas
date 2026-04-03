@@ -29,7 +29,7 @@ namespace CCDevelopment.LasPlagas
         {
             base.CompPostTick(ref severityAdjustment);
 
-            if(Props.currentPlagaParasiteStage.defName != "CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier3")
+            if(Props.currentPlagaParasiteStage.defName != "CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier2")
             {
                 if (Find.TickManager.TicksGame > nextTierTick)
                 {
@@ -51,9 +51,7 @@ namespace CCDevelopment.LasPlagas
                 case plagaParasiteSubBaseName + "1":
                     newHediffName = plagaParasiteSubBaseName + "2";
                     break;
-                case plagaParasiteSubBaseName + "2":
-                    newHediffName = plagaParasiteSubBaseName + "3";
-                    break;
+                
             }
             HediffDef newHediff = HediffDef.Named(newHediffName);
             Messages.Message(
