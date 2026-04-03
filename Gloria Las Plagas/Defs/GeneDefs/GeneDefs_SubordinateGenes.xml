@@ -20,5 +20,24 @@
 		</beardTagFilter>
 	</GeneDef>
 	
-
+	<GeneDef>
+			<defName>CCDevelopment_LasPlagas_Mandibula_Head_Gene</defName>
+			<label>mandibula hosted head</label>
+			<description>mandibula out :c</description>
+			<forcedHeadTypes><li>CCDevelopment_LasPlagas_Mandibula</li></forcedHeadTypes>
+			
+			<hairTagFilter>
+				<whitelist>true</whitelist>
+				<tags>
+					<li>Bald</li>
+				</tags>
+			</hairTagFilter>
+			<beardTagFilter>
+				<whitelist>true</whitelist>
+				<tags>
+					<li>NoBeard</li>
+				</tags>
+			</beardTagFilter>
+		</GeneDef>
+		
 </Defs>

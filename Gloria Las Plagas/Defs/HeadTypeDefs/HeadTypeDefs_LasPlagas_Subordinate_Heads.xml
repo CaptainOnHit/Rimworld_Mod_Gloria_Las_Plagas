@@ -4,11 +4,21 @@
 	<HeadTypeDef>
 		<defName>CCDevelopment_LasPlagas_Guadana</defName>
 		<label>guadana head</label>
-		<graphicPath>Things/Pawns/Heads/Guadana_head1</graphicPath>
+		<graphicPath>Things/Pawns/Heads/guadana_head</graphicPath>
 		<gender>None</gender>
 		<requiredGenes>
 			<li>CCDevelopment_LasPlagas_Guadana_Head_Gene</li>
 		</requiredGenes>
 	</HeadTypeDef>
-
+	
+	<HeadTypeDef>
+		<defName>CCDevelopment_LasPlagas_Mandibula</defName>
+		<label>mandibula head</label>
+		<graphicPath>Things/Pawns/Heads/mandibula_head</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>CCDevelopment_LasPlagas_Mandibula_Head_Gene</li>
+		</requiredGenes>
+	</HeadTypeDef>
+	
 </Defs>
