@@ -59,13 +59,6 @@
 			<li Class="CompProperties_UseEffect">
 				<compClass>CCDevelopment.LasPlagas.Comp_UseEffect_FindAmber</compClass>
 			</li>
-
-
-			</comps>
-		
-		
-	
-	
-	
+		</comps>
 	</ThingDef>
 </Defs>

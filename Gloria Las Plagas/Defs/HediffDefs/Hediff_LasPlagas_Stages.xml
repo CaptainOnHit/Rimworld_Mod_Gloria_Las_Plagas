@@ -39,4 +39,15 @@
 		</comps>
 	</HediffDef>
 	
+	<HediffDef>
+		<defName>CCDevelopment_LasPlagas_LasPlagasParasite_Superior_Tier</defName>
+		<label>plagas Parasite (Superior)</label>
+		<description>SUSSYPERIOR</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_PlagasParasite_Superior">
+				<currentStagePlagaXenotype>CCDevelopment_LasPlagas_Superior</currentStagePlagaXenotype>
+			</li>
+		</comps>
+	</HediffDef>
 </Defs>

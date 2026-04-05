@@ -63,4 +63,56 @@
 			</li>
 		</stages>
 	</HediffDef>
+	<HediffDef Parentname="InfectionBase">
+		<defName>CCDevelopment_LasPlagas_Infection_Superior</defName>
+		<label>las Plagas (Superior)</label>
+		<description>AMONGUS</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<makesSickThought>true</makesSickThought>
+		<lethalSeverity>1.01</lethalSeverity>  <!--just for the progress bar -->
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<tendable>false</tendable>
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>10</severityPerDayNotImmune>
+			</li>
+			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_LasPlagasTransform_Superior"/>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<painOffset>0.5</painOffset>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>major</label>
+				<painOffset>1</painOffset>
+			</li>
+			<li>
+				<minSeverity>0.69</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>false</lifeThreatening>
+				<painOffset>2</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.85</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>false</lifeThreatening>
+				<painOffset>3</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.6</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

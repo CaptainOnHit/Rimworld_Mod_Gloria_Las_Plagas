@@ -62,10 +62,15 @@
     <Compile Include="CompAbilityEffect_EatHead.cs" />
     <Compile Include="CompProperties_UseEffectFindEmber.cs" />
     <Compile Include="Comp_UseEffect_FindEmber.cs" />
+    <Compile Include="ForbidHatPatch.cs" />
     <Compile Include="HarmonyHeadSizePatch.cs" />
     <Compile Include="HarmonyPatches.cs" />
+    <Compile Include="HediffCompProperties_LasPlagasTransform_Superior.cs" />
+    <Compile Include="HediffCompProperties_PlagasParasite_Superior.cs" />
     <Compile Include="HediffCompProperties_PlagasParasite_Subordinate .cs" />
     <Compile Include="HediffCompProperties_LasPlagasTransform.cs" />
+    <Compile Include="HediffComp_LasPlagasTransform_Superior.cs" />
+    <Compile Include="HediffComp_PlagasParasite_Superior.cs" />
     <Compile Include="HediffComp_PlagasParasite_Subordinate.cs" />
     <Compile Include="HediffComp_LasPlagasTransform.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

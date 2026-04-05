@@ -38,9 +38,47 @@
 		<products>
 			<CCDevelopment_LasPlagas_Embryo>1</CCDevelopment_LasPlagas_Embryo>
 		</products>
-	
-	
 	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>CCDevelopment_LasPlagas_ExtractParasite_Superior</defName>
+		<label>extract las Plagas Parasite (Superior Species)</label>
+		<description>extract a stronger version of the las Plagas Parasite from ancient amber</description>
+		<jobString>Extracting Plaga Parasite</jobString>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<workAmount>1200</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		 <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CCDevelopment_LasPlagas_Amber</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CCDevelopment_LasPlagas_Amber</li>
+			</thingDefs>
+		</fixedIngredientFilter>	
+		<products>
+			<CCDevelopment_LasPlagas_Embryo_Superior>1</CCDevelopment_LasPlagas_Embryo_Superior>
+		</products>
+	</RecipeDef>
+	
+	
 
 
 </Defs>
