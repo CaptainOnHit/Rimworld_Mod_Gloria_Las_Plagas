@@ -6,6 +6,7 @@
 		<label>Eat Head</label>
 		<description>sussy head</description>
 		<cooldownTicksRange>500</cooldownTicksRange>
+		<iconPath>UI/Icons/Abilities/EatHead_Ability_Icon</iconPath>
 		<jobDef>CastAbilityOnThingMelee</jobDef>
 		<stunTargetWhileCasting>true</stunTargetWhileCasting>
 		<ai_IsOffensive>true</ai_IsOffensive>

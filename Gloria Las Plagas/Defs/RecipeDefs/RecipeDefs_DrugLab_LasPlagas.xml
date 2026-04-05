@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>CCDevelopment_LasPlagas_ExtractParasite</defName>
+		<label>extract las Plagas Parasite</label>
+		<description>extract the las Plagas Parasite from ancient amber</description>
+		<jobString>Extracting Plaga Parasite</jobString>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<workAmount>400</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<skillRequirements>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		 <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CCDevelopment_LasPlagas_Amber</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CCDevelopment_LasPlagas_Amber</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		
+		<products>
+			<CCDevelopment_LasPlagas_Embryo>1</CCDevelopment_LasPlagas_Embryo>
+		</products>
+	
+	
+	</RecipeDef>
+
+
+</Defs>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>CCDevelopment_LasPlagas_Amber</defName>
+		<label>plaga parasite amber</label>
+		<description>an amber that hosts the evil within</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Plage_Amber</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>25</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>20</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		
+		<deepCommonality>1</deepCommonality>
+		<deepCountPerPortion>10</deepCountPerPortion>
+		<deepLumpSizeRange>1~3</deepLumpSizeRange>
+		<burnableByRecipe>false</burnableByRecipe>
+		
+	</ThingDef>
+	
+	<ThingDef>
+		<defName>CCDevelopment_LasPlagas_AmberScanner</defName>
+		<label>plaga amber scanner</label>
+		<description>a device to find amber containing the las Plagas Parasite</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Plaga_Scanner</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<selectable>true</selectable>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>-4</Beauty>
+			<Mass>1</Mass>
+			<MarketValue>2600</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>use scanner to find las plagas amber</useLabel>
+				<showUseGizmo>true</showUseGizmo>
+			</li>
+			<li Class="CompProperties_UseEffectDestroySelf" />
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_UseEffect">
+				<compClass>CCDevelopment.LasPlagas.Comp_UseEffect_FindAmber</compClass>
+			</li>
+
+
+			</comps>
+		
+		
+	
+	
+	
+	</ThingDef>
+</Defs>
