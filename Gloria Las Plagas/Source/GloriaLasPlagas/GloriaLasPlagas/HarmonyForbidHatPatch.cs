@@ -12,7 +12,7 @@ using Verse;
 namespace CCDevelopment.LasPlagas
 {
     [HarmonyPatch]
-    public static class ForbidHatPatch
+    public static class HarmonyForbidHatPatch
     {
 
 

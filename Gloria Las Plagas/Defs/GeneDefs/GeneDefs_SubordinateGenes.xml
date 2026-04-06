@@ -5,6 +5,7 @@
 		<label>guadana hosted head</label>
 		<description>guadana out :c</description>
 		<forcedHeadTypes><li>CCDevelopment_LasPlagas_Guadana</li></forcedHeadTypes>
+		<geneClass>CCDevelopment.LasPlagas.Gene_GuanadaHead</geneClass>
 		<hairTagFilter>
 			<whitelist>true</whitelist>
 			<tags>
@@ -24,6 +25,7 @@
 			<label>mandibula hosted head</label>
 			<description>mandibula out :c</description>
 			<forcedHeadTypes><li>CCDevelopment_LasPlagas_Mandibula</li></forcedHeadTypes>
+			<geneClass>CCDevelopment.LasPlagas.Gene_MandibulaHead</geneClass>
 			<abilities>
             <li>CCDevelopment_LasPlagas_EatHead</li>
 			</abilities>
