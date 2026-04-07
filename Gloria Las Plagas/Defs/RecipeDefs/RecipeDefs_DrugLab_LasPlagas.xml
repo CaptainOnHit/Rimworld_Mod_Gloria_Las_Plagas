@@ -3,7 +3,7 @@
 	<RecipeDef>
 		<defName>CCDevelopment_LasPlagas_ExtractParasite</defName>
 		<label>extract las Plagas Parasite</label>
-		<description>extract the las Plagas Parasite from ancient amber</description>
+		<description>Some amber deposits contain living Plaga Parasites preserved for eons. A careful extraction can yield a dormant specimen, ready for implantation.</description>
 		<jobString>Extracting Plaga Parasite</jobString>
 		<recipeUsers>
 			<li>DrugLab</li>
@@ -43,7 +43,7 @@
 	<RecipeDef>
 		<defName>CCDevelopment_LasPlagas_ExtractParasite_Superior</defName>
 		<label>extract las Plagas Parasite (Superior Species)</label>
-		<description>extract a stronger version of the las Plagas Parasite from ancient amber</description>
+		<description>Occasionally, amber yields a rarer Plaga Parasite of the superior Species. These specimens are significantly more potent than the subordinate Species but also far more dangerous for the host. </description>
 		<jobString>Extracting Plaga Parasite</jobString>
 		<recipeUsers>
 			<li>DrugLab</li>
@@ -77,8 +77,4 @@
 			<CCDevelopment_LasPlagas_Embryo_Superior>1</CCDevelopment_LasPlagas_Embryo_Superior>
 		</products>
 	</RecipeDef>
-	
-	
-
-
 </Defs>

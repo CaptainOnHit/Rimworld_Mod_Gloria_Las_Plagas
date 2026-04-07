@@ -3,13 +3,13 @@
 	<RecipeDef>
 		<defName>CCDevelopment_LasPlagas_PlagasAmberScanner</defName>
 		<label>make amber scanner</label>
-		<description>e</description>
+		<description>A portable device used to scan the local terrain for amber deposits resting deep below the surface. Standard equipment for anyone seeking preserved Plaga specimens.</description>
 		<jobString>Crafting scanner</jobString>
 		<recipeUsers>
 			<li>TableMachining</li>
 			<li>FabricationBench</li>
 		</recipeUsers>
-		<workAmount>800</workAmount>
+		<workAmount>1000</workAmount>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<effectWorking>Smith</effectWorking>
@@ -51,8 +51,7 @@
 				</filter>
 				<count>2</count>
 			</li>
-		</ingredients>
-		
+		</ingredients>	
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
@@ -60,8 +59,7 @@
 				<li>ComponentIndustrial</li>
 				<li>ComponentSpacer</li>
 			</thingDefs>
-		</fixedIngredientFilter>		
-		
+		</fixedIngredientFilter>			
 		<products>
 			<CCDevelopment_LasPlagas_AmberScanner>1</CCDevelopment_LasPlagas_AmberScanner>
 		</products>

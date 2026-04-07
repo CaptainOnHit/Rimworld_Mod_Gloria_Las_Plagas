@@ -37,10 +37,21 @@ namespace CCDevelopment.LasPlagas
                     }
                     i++;
                 }
-                Messages.Message(
-                    Pawn.LabelShort + " has been fully consumed by Las Plagas!",
-                    Pawn, MessageTypeDefOf.NeutralEvent
-                );
+               
+                if (Pawn.Faction != Faction.OfPlayer)
+                {
+                    Pawn.SetFaction(Faction.OfPlayer);
+                    Messages.Message(Pawn.LabelShort + " has joined your faction, now fully consumed by Las Plagas.", MessageTypeDefOf.PositiveEvent);
+                }
+                else
+                {
+                    Messages.Message(
+                   Pawn.LabelShort + " has been fully consumed by Las Plagas!",
+                   Pawn, MessageTypeDefOf.NeutralEvent
+                    );
+                }
+
+
                 HediffDef newHediff = Props.plagaStages[decidedPlagaStage];
                 Pawn.health.AddHediff(newHediff);
                 Pawn.health.RemoveHediff(parent);

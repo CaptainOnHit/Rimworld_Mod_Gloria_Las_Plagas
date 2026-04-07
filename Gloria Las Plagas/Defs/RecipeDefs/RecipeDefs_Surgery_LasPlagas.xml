@@ -4,7 +4,7 @@
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>CCDevelopment_LasPlagas_Surgery_Subordinate</defName>
 		<label>las Plagas surgery</label>
-		<description>Infect a creature with the Las Plagas parasite</description>
+		<description>A Plaga Parasite is implanted into the subject's body. It attaches itself to the spine and integrates into the central nervous system, slowly eroding the host's independence.</description>
 		<workerClass>Recipe_AddHediff</workerClass>
 		<addsHediff>CCDevelopment_LasPlagas_Infection_Subordinate</addsHediff>
 		<jobString>Infecting TargetA.</jobString>
@@ -50,7 +50,7 @@
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>CCDevelopment_LasPlagas_Surgery_Superior</defName>
 		<label>las Plagas surgery (superior)</label>
-		<description>Infect a creature with the Las Plagas parasite</description>
+		<description>A Plaga Parasite of the superior Species is implanted into the subject's body. It attaches itself to the spine and integrates into the central nervous system, slowly eroding the host's independence.</description>
 		<workerClass>Recipe_AddHediff</workerClass>
 		<addsHediff>CCDevelopment_LasPlagas_Infection_Superior</addsHediff>
 		<jobString>Infecting TargetA.</jobString>
@@ -90,5 +90,40 @@
 				<li>Medicine</li>
 			</categories>
 		</fixedIngredientFilter>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>CCDevelopment_LasPlagas_Surgery_RemoveParasite</defName>
+		<label>remove Plaga Parasite</label>
+		<description>An attempt to surgically remove the Plaga Parasite from an infected host. The parasite's grip on the nervous system makes a clean extraction nearly impossible. Results are unpredictable and may even cause greater harm.</description>
+		<jobString>Removing Plaga Parasite</jobString>
+		<workerClass></workerClass>
+		<workAmount>4000</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<targetsBodyPart>false</targetsBodyPart>
+		<isViolation>true</isViolation>
+		<deathOnFailedSurgeryChance>1</deathOnFailedSurgeryChance>
+		<effectWorking>Surgery</effectWorking>
+		<surgerySuccessChanceFactor>1.25</surgerySuccessChanceFactor>
+		<soundWorking>Recipe_Surgery</soundWorking>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+		<workerClass>CCDevelopment.LasPlagas.RecipeWorker_RemoveParasite</workerClass>
 	</RecipeDef>
 </Defs>

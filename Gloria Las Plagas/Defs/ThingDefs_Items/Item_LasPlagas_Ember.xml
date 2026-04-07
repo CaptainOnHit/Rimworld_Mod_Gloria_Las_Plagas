@@ -3,7 +3,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>CCDevelopment_LasPlagas_Amber</defName>
 		<label>plaga parasite amber</label>
-		<description>an amber that hosts the evil within</description>
+		<description>An ancient piece of amber containing a preserved Plaga Parasite within. With careful extraction, a living specimen may be recovered.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Plage_Amber</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -33,7 +33,7 @@
 	<ThingDef>
 		<defName>CCDevelopment_LasPlagas_AmberScanner</defName>
 		<label>plaga amber scanner</label>
-		<description>a device to find amber containing the las Plagas Parasite</description>
+		<description>A portable device used to scan the local terrain for amber deposits resting deep below the surface. Standard equipment for anyone seeking preserved Plaga specimens.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Plaga_Scanner</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

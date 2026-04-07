@@ -3,6 +3,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>CCDevelopment_LasPlagas_Embryo</defName>
 		<label>plaga embryo</label>
+		<description>A Plaga parasite in its embryonic stage, fragile on its own, but fully capable of maturing once implanted into a living host.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Plaga_Item</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -24,9 +25,9 @@
 	
 	<ThingDef ParentName="ResourceBase">
 		<defName>CCDevelopment_LasPlagas_Embryo_Superior</defName>
-		<label>superior plaga embryo</label>
+		<label>A Plaga parasite of the superior species in its embryonic stage, fragile on its own, but fully capable of maturing once implanted into a living host.</label>
 		<graphicData>
-			<texPath>Things/Item/Resource/Plaga_Item</texPath>
+			<texPath>Things/Item/Resource/Plaga_Superior_Item</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconForStackCount>1</uiIconForStackCount>

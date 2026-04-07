@@ -75,10 +75,10 @@
 	
 	<XenotypeDef>
 		<defName>CCDevelopment_LasPlagas_Superior</defName>
-		<label>superior</label>
+		<label>superior plaga</label>
 		<description>superior tier plaga dude</description>
 		<displayPriority>1001</displayPriority>
-		<iconPath>UI/Icons/Xenotypes/Mandibula</iconPath>
+		<iconPath>UI/Icons/Xenotypes/Plaga_Superior</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<genes>

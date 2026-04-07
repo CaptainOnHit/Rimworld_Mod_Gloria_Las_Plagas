@@ -4,7 +4,7 @@
 	<AbilityDef>
 		<defName>CCDevelopment_LasPlagas_EatHead</defName>
 		<label>Eat Head</label>
-		<description>sussy head</description>
+		<description>A vicious attack where the Mandibula clamps its jaws around the target's neck and tears the head off.</description>
 		<cooldownTicksRange>500</cooldownTicksRange>
 		<iconPath>UI/Icons/Abilities/EatHead_Ability_Icon</iconPath>
 		<jobDef>CastAbilityOnThingMelee</jobDef>

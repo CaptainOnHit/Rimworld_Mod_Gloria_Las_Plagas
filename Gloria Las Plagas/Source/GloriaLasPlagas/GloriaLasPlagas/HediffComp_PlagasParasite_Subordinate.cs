@@ -23,6 +23,14 @@ namespace CCDevelopment.LasPlagas
         {
             Pawn.genes?.SetXenotype(Props.currentStagePlagaXenotype);
             nextTierTick = Find.TickManager.TicksGame + (daysUntilNextTier * ticksPerDay);
+            //only drop Headwear if Guadana or Mandibula
+            if (Props.currentPlagaParasiteStage.defName == "CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier0") return;
+            var apparelList = Pawn.apparel.WornApparel.Where(apperal => apperal.def.apparel.bodyPartGroups.Contains(BodyPartGroupDefOf.UpperHead) || apperal.def.apparel.bodyPartGroups.Contains(BodyPartGroupDefOf.FullHead)).ToList();
+            foreach (var apparel in apparelList)
+            {
+                Pawn.apparel.Remove(apparel);
+                GenPlace.TryPlaceThing(apparel, Pawn.Position, Pawn.Map, ThingPlaceMode.Near);
+            }
         }
 
         public override void CompPostTick(ref float severityAdjustment)
