@@ -5,7 +5,7 @@
 		<defName>CCDevelopment_LasPlagas_Surgery_Subordinate</defName>
 		<label>las Plagas surgery</label>
 		<description>A Plaga Parasite is implanted into the subject's body. It attaches itself to the spine and integrates into the central nervous system, slowly eroding the host's independence.</description>
-		<workerClass>Recipe_AddHediff</workerClass>
+		<workerClass>CCDevelopment.LasPlagas.Recipe_AddHediff_PlagaCheck</workerClass>
 		<addsHediff>CCDevelopment_LasPlagas_Infection_Subordinate</addsHediff>
 		<jobString>Infecting TargetA.</jobString>
 		<workAmount>2000</workAmount>
@@ -51,7 +51,7 @@
 		<defName>CCDevelopment_LasPlagas_Surgery_Superior</defName>
 		<label>las Plagas surgery (superior)</label>
 		<description>A Plaga Parasite of the superior Species is implanted into the subject's body. It attaches itself to the spine and integrates into the central nervous system, slowly eroding the host's independence.</description>
-		<workerClass>Recipe_AddHediff</workerClass>
+		<workerClass>CCDevelopment.LasPlagas.Recipe_AddHediff_PlagaCheck</workerClass>
 		<addsHediff>CCDevelopment_LasPlagas_Infection_Superior</addsHediff>
 		<jobString>Infecting TargetA.</jobString>
 		<workAmount>2000</workAmount>

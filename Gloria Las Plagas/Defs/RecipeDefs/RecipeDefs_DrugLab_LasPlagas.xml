@@ -43,7 +43,7 @@
 	<RecipeDef>
 		<defName>CCDevelopment_LasPlagas_ExtractParasite_Superior</defName>
 		<label>extract las Plagas Parasite (Superior Species)</label>
-		<description>Occasionally, amber yields a rarer Plaga Parasite of the superior Species. These specimens are significantly more potent than the subordinate Species but also far more dangerous for the host. </description>
+		<description>Occasionally, amber yields a rarer Plaga Parasite of the superior Species. These specimens are significantly more potent than the subordinate Species but also far more dangerous for the host.</description>
 		<jobString>Extracting Plaga Parasite</jobString>
 		<recipeUsers>
 			<li>DrugLab</li>

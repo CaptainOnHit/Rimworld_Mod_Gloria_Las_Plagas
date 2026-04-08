@@ -16,7 +16,7 @@
 			<MaxHitPoints>100</MaxHitPoints>
 		</statBases>
 		<thingCategories>
-			<li>Medicine</li>
+			<li>Manufactured</li>
 		</thingCategories>
 		<statBases>
 		<Mass>0.50</Mass>
@@ -25,7 +25,8 @@
 	
 	<ThingDef ParentName="ResourceBase">
 		<defName>CCDevelopment_LasPlagas_Embryo_Superior</defName>
-		<label>A Plaga parasite of the superior species in its embryonic stage, fragile on its own, but fully capable of maturing once implanted into a living host.</label>
+		<label>plaga embryo (superior)</label>
+		<description>A Plaga parasite of the superior species in its embryonic stage, fragile on its own, but fully capable of maturing once implanted into a living host.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Plaga_Superior_Item</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -38,7 +39,7 @@
 			<MaxHitPoints>100</MaxHitPoints>
 		</statBases>
 		<thingCategories>
-			<li>Medicine</li>
+			<li>Manufactured</li>
 		</thingCategories>
 		<statBases>
 		<Mass>1.0</Mass>
