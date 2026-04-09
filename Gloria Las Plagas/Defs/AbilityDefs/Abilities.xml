@@ -15,7 +15,7 @@
 			<verbClass>Verb_CastAbilityTouch</verbClass>
 			<range>-1</range>
 			<drawAimPie>true</drawAimPie>
-			<warmupTime>2</warmupTime>
+			<warmupTime>4</warmupTime>
 			<targetParams>
 				<canTargetSelf>false</canTargetSelf>
 				<canTargetBuildings>false</canTargetBuildings>

@@ -5,14 +5,17 @@
 		<defName>CCDevelopment_LasPlagas_Surgery_Subordinate</defName>
 		<label>las Plagas surgery</label>
 		<description>A Plaga Parasite is implanted into the subject's body. It attaches itself to the spine and integrates into the central nervous system, slowly eroding the host's independence.</description>
+		<descriptionHyperlinks>
+			<HediffDef>CCDevelopment_LasPlagas_Infection_Subordinate</HediffDef>
+		</descriptionHyperlinks>
 		<workerClass>CCDevelopment.LasPlagas.Recipe_AddHediff_PlagaCheck</workerClass>
 		<addsHediff>CCDevelopment_LasPlagas_Infection_Subordinate</addsHediff>
 		<jobString>Infecting TargetA.</jobString>
-		<workAmount>2000</workAmount>
+		<workAmount>1000</workAmount>
 		<hideBodyPartNames>true</hideBodyPartNames>
 		<targetsBodyPart>false</targetsBodyPart>
 		<isViolation>true</isViolation>
-		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
 		<developmentalStageFilter>Adult</developmentalStageFilter> <!-- Las Plagas kills every child -->
 		<surgeryOutcomeEffect IsNull="True" /> <!-- Always succeeds -->
 		<recipeUsers>
@@ -51,6 +54,9 @@
 		<defName>CCDevelopment_LasPlagas_Surgery_Superior</defName>
 		<label>las Plagas surgery (superior)</label>
 		<description>A Plaga Parasite of the superior Species is implanted into the subject's body. It attaches itself to the spine and integrates into the central nervous system, slowly eroding the host's independence.</description>
+		<descriptionHyperlinks>
+			<HediffDef>CCDevelopment_LasPlagas_Infection_Superior</HediffDef>
+		</descriptionHyperlinks>
 		<workerClass>CCDevelopment.LasPlagas.Recipe_AddHediff_PlagaCheck</workerClass>
 		<addsHediff>CCDevelopment_LasPlagas_Infection_Superior</addsHediff>
 		<jobString>Infecting TargetA.</jobString>
@@ -58,7 +64,7 @@
 		<hideBodyPartNames>true</hideBodyPartNames>
 		<targetsBodyPart>false</targetsBodyPart>
 		<isViolation>true</isViolation>
-		<deathOnFailedSurgeryChance>0.2</deathOnFailedSurgeryChance>
+		<deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
 		<developmentalStageFilter>Adult</developmentalStageFilter> <!-- Las Plagas kills every child -->
 		<surgeryOutcomeEffect IsNull="True" /> <!-- Always succeeds -->
 		<recipeUsers>
@@ -98,7 +104,7 @@
 		<description>An attempt to surgically remove the Plaga Parasite from an infected host. The parasite's grip on the nervous system makes a clean extraction nearly impossible. Results are unpredictable and may even cause greater harm.</description>
 		<jobString>Removing Plaga Parasite</jobString>
 		<workerClass></workerClass>
-		<workAmount>4000</workAmount>
+		<workAmount>3000</workAmount>
 		<hideBodyPartNames>true</hideBodyPartNames>
 		<targetsBodyPart>false</targetsBodyPart>
 		<isViolation>true</isViolation>

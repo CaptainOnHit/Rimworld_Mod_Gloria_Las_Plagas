@@ -4,6 +4,9 @@
 		<defName>CCDevelopment_LasPlagas_PlagasAmberScanner</defName>
 		<label>make amber scanner</label>
 		<description>A portable device used to scan the local terrain for amber deposits resting deep below the surface. Standard equipment for anyone seeking preserved Plaga specimens.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CCDevelopment_LasPlagas_AmberScanner</ThingDef>
+		</descriptionHyperlinks>
 		<jobString>Crafting scanner</jobString>
 		<recipeUsers>
 			<li>TableMachining</li>
@@ -15,7 +18,7 @@
 		<effectWorking>Smith</effectWorking>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<skillRequirements>
-			<Crafting>6</Crafting>
+			<Crafting>8</Crafting>
 		</skillRequirements>
 		<researchPrerequisite>GroundPenetratingScanner</researchPrerequisite>
 		 <ingredients>

@@ -3,7 +3,10 @@
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>CCDevelopment_LasPlagas_GuadanaHead</defName>
 		<label>guadana head</label>
-		<description>HAED</description>
+		<description>The Plaga Parasite has Burst through the host's skull.</description>
+		<descriptionHyperlinks>
+			<GeneDef>CCDevelopment_LasPlagas_Guadana_Head_Gene</GeneDef>
+		</descriptionHyperlinks>
 		<addedPartProps>
 			<partEfficiency>1</partEfficiency>
 		</addedPartProps>
@@ -11,7 +14,10 @@
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>CCDevelopment_LasPlagas_MandibulaHead</defName>
 		<label>mandibula head</label>
-		<description>HAED</description>
+		<description>The Plaga Parasite has Burst through the host's skull.</description>
+		<descriptionHyperlinks>
+			<GeneDef>CCDevelopment_LasPlagas_Mandibula_Head_Gene</GeneDef>
+		</descriptionHyperlinks>
 		<addedPartProps>
 			<partEfficiency>1</partEfficiency>
 		</addedPartProps>

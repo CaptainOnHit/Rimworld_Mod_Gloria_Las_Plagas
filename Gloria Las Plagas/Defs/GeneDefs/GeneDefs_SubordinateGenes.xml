@@ -3,7 +3,10 @@
 	<GeneDef>
 		<defName>CCDevelopment_LasPlagas_Guadana_Head_Gene</defName>
 		<label>guadana hosted head</label>
-		<description>guadana out :c</description>
+		<description>The Plaga Parasite has Burst through the host's skull.</description>
+		<descriptionHyperlinks>
+			<HediffDef>CCDevelopment_LasPlagas_GuadanaHead</HediffDef>
+		</descriptionHyperlinks>
 		<forcedHeadTypes><li>CCDevelopment_LasPlagas_Guadana</li></forcedHeadTypes>
 		<geneClass>CCDevelopment.LasPlagas.Gene_GuanadaHead</geneClass>
 		<hairTagFilter>
@@ -23,7 +26,10 @@
 	<GeneDef>
 			<defName>CCDevelopment_LasPlagas_Mandibula_Head_Gene</defName>
 			<label>mandibula hosted head</label>
-			<description>mandibula out :c</description>
+			<description>The Plaga Parasite has Burst through the host's skull.</description>
+			<descriptionHyperlinks>
+				<HediffDef>CCDevelopment_LasPlagas_MandibulaHead</HediffDef>
+			</descriptionHyperlinks>
 			<forcedHeadTypes><li>CCDevelopment_LasPlagas_Mandibula</li></forcedHeadTypes>
 			<geneClass>CCDevelopment.LasPlagas.Gene_MandibulaHead</geneClass>
 			<abilities>

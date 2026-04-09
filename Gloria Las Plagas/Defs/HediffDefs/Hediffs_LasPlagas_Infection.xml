@@ -3,7 +3,10 @@
 	<HediffDef Parentname="InfectionBase">
 		<defName>CCDevelopment_LasPlagas_Infection_Subordinate</defName>
 		<label>las Plagas</label>
-		<description>AMONGUS</description>
+		<description>A living Plaga Parasite is attached to the host's spine. As the infection progresses, the parasite exerts increasing control over the host's behavior and body. Removal becomes more dangerous the longer it is left untreated.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>CCDevelopment_LasPlagas_Surgery_RemoveParasite</RecipeDef>
+		</descriptionHyperlinks>
 		<hediffClass>HediffWithComps</hediffClass>
 		<makesSickThought>true</makesSickThought>
 		<lethalSeverity>1.01</lethalSeverity>  <!--just for the progress bar -->
@@ -12,7 +15,7 @@
 		<tendable>false</tendable>
 		<comps>
 			<li Class="HediffCompProperties_Immunizable">
-				<severityPerDayNotImmune>10</severityPerDayNotImmune>
+				<severityPerDayNotImmune>0.1</severityPerDayNotImmune>
 			</li>
 			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_LasPlagasTransform">
 				<plagaStages>
@@ -21,9 +24,9 @@
 					<li>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier2</li>
 				</plagaStages>
 				<probabilities>
-					<li>0.60</li>
-					<li>0.30</li>
-					<li>0.10</li>
+					<li>0.80</li>
+					<li>0.15</li>
+					<li>0.05</li>
 				</probabilities>
 			</li>
 		</comps>
@@ -41,6 +44,61 @@
 				<minSeverity>0.69</minSeverity>
 				<label>extreme</label>
 				<lifeThreatening>false</lifeThreatening>
+				<painOffset>0.2</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.85</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>false</lifeThreatening>
+				<painOffset>0.4</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.7</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef Parentname="InfectionBase">
+		<defName>CCDevelopment_LasPlagas_Infection_Superior</defName>
+		<label>las Plagas (Superior)</label>
+		<description>A living Plaga Parasite is attached to the host's spine. As the infection progresses, the parasite exerts increasing control over the host's behavior and body. Removal becomes more dangerous the longer it is left untreated.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>CCDevelopment_LasPlagas_Surgery_RemoveParasite</RecipeDef>
+		</descriptionHyperlinks>
+		<hediffClass>HediffWithComps</hediffClass>
+		<makesSickThought>true</makesSickThought>
+		<lethalSeverity>1.01</lethalSeverity>  <!--just for the progress bar -->
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<tendable>false</tendable>
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.05</severityPerDayNotImmune>
+			</li>
+			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_LasPlagasTransform_Superior"/>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<painOffset>0.1</painOffset>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>major</label>
+				<painOffset>0.2</painOffset>
+			</li>
+			<li>
+				<minSeverity>0.69</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>false</lifeThreatening>
 				<painOffset>0.3</painOffset>
 				<capMods>
 					<li>
@@ -53,63 +111,11 @@
 				<minSeverity>0.85</minSeverity>
 				<label>extreme</label>
 				<lifeThreatening>false</lifeThreatening>
-				<painOffset>0.8</painOffset>
+				<painOffset>0.45</painOffset>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
-						<setMax>0.6</setMax>
-					</li>
-				</capMods>
-			</li>
-		</stages>
-	</HediffDef>
-	<HediffDef Parentname="InfectionBase">
-		<defName>CCDevelopment_LasPlagas_Infection_Superior</defName>
-		<label>las Plagas (Superior)</label>
-		<description>AMONGUS</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<makesSickThought>true</makesSickThought>
-		<lethalSeverity>1.01</lethalSeverity>  <!--just for the progress bar -->
-		<initialSeverity>0.001</initialSeverity>
-		<maxSeverity>1.0</maxSeverity>
-		<tendable>false</tendable>
-		<comps>
-			<li Class="HediffCompProperties_Immunizable">
-				<severityPerDayNotImmune>10</severityPerDayNotImmune>
-			</li>
-			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_LasPlagasTransform_Superior"/>
-		</comps>
-		<stages>
-			<li>
-				<label>minor</label>
-				<painOffset>0.5</painOffset>
-			</li>
-			<li>
-				<minSeverity>0.25</minSeverity>
-				<label>major</label>
-				<painOffset>1</painOffset>
-			</li>
-			<li>
-				<minSeverity>0.69</minSeverity>
-				<label>extreme</label>
-				<lifeThreatening>false</lifeThreatening>
-				<painOffset>2</painOffset>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.2</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<minSeverity>0.85</minSeverity>
-				<label>extreme</label>
-				<lifeThreatening>false</lifeThreatening>
-				<painOffset>3</painOffset>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<setMax>0.6</setMax>
+						<setMax>0.7</setMax>
 					</li>
 				</capMods>
 			</li>

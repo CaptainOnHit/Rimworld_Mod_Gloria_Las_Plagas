@@ -2,8 +2,11 @@
 <Defs>
 	<ThingDef ParentName="ResourceBase">
 		<defName>CCDevelopment_LasPlagas_Embryo</defName>
-		<label>plaga embryo</label>
+		<label>plaga embryo (subordinate)</label>
 		<description>A Plaga parasite in its embryonic stage, fragile on its own, but fully capable of maturing once implanted into a living host.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>CCDevelopment_LasPlagas_Surgery_Subordinate</RecipeDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Resource/Plaga_Item</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -19,7 +22,7 @@
 			<li>Manufactured</li>
 		</thingCategories>
 		<statBases>
-		<Mass>0.50</Mass>
+			<Mass>0.50</Mass>
 		</statBases>
 	</ThingDef>
 	
@@ -27,6 +30,9 @@
 		<defName>CCDevelopment_LasPlagas_Embryo_Superior</defName>
 		<label>plaga embryo (superior)</label>
 		<description>A Plaga parasite of the superior species in its embryonic stage, fragile on its own, but fully capable of maturing once implanted into a living host.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>CCDevelopment_LasPlagas_Surgery_Superior</RecipeDef>
+		</descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Resource/Plaga_Superior_Item</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -42,7 +48,7 @@
 			<li>Manufactured</li>
 		</thingCategories>
 		<statBases>
-		<Mass>1.0</Mass>
+			<Mass>1.0</Mass>
 		</statBases>
 	</ThingDef>
 

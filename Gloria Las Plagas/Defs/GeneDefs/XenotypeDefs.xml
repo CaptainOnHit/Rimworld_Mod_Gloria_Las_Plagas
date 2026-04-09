@@ -4,7 +4,12 @@
 	<XenotypeDef>
 		<defName>CCDevelopment_LasPlagas_Ganado</defName>
 		<label>ganado</label>
-		<description>tier 0 plaga dude</description>
+		<description>A human host fully infected by a Plaga Parasite of the subordinate species in its first stage of development. Ganados exhibit increased physical strength, though their capacity for fine motor skills and craftsmanship is noticeably diminished. They act entirely in service of the parasite's will.</description>
+		<descriptionHyperlinks>
+			<XenotypeDef>CCDevelopment_LasPlagas_Guadana</XenotypeDef>
+			<ThingDef>CCDevelopment_LasPlagas_Embryo</ThingDef>
+		</descriptionHyperlinks>
+		
 		<displayPriority>1001</displayPriority>
 		<iconPath>UI/Icons/Xenotypes/Ganado</iconPath>
 		<inheritable>false</inheritable>
@@ -28,7 +33,12 @@
 	<XenotypeDef>
 		<defName>CCDevelopment_LasPlagas_Guadana</defName>
 		<label>guadaña</label>
-		<description>tier 0 plaga dude</description>
+		<description>A Plaga Parasite in the second stage its development. The parasite has erupted through the host's skull, replacing the head with scythe-like tentacles.</description>
+		<descriptionHyperlinks>
+			<XenotypeDef>CCDevelopment_LasPlagas_Ganado</XenotypeDef>
+			<XenotypeDef>CCDevelopment_LasPlagas_Mandibula</XenotypeDef>
+			<ThingDef>CCDevelopment_LasPlagas_Embryo</ThingDef>
+		</descriptionHyperlinks>
 		<displayPriority>1001</displayPriority>
 		<iconPath>UI/Icons/Xenotypes/Guadana</iconPath>
 		<inheritable>false</inheritable>
@@ -52,7 +62,11 @@
 	<XenotypeDef>
 		<defName>CCDevelopment_LasPlagas_Mandibula</defName>
 		<label>mandíbula</label>
-		<description>tier 0 plaga dude</description>
+		<description>A Plaga Parasite in the third stage of its development. The parasite's tentacles have hardened into rigid limbs, used to grab and restrain prey.</description>
+		<descriptionHyperlinks>
+			<XenotypeDef>CCDevelopment_LasPlagas_Guadana</XenotypeDef>
+			<ThingDef>CCDevelopment_LasPlagas_Embryo</ThingDef>
+		</descriptionHyperlinks>
 		<displayPriority>1001</displayPriority>
 		<iconPath>UI/Icons/Xenotypes/Mandibula</iconPath>
 		<inheritable>false</inheritable>
@@ -76,7 +90,10 @@
 	<XenotypeDef>
 		<defName>CCDevelopment_LasPlagas_Superior</defName>
 		<label>superior plaga</label>
-		<description>superior tier plaga dude</description>
+		<description>A human host fully infected by a Plaga Parasite of the superior species. Unlike the subordinate species, superior hosts retain their cognitive functions while remaining entirely under the parasite's control, making them significantly more capable and more dangerous than common Ganados.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CCDevelopment_LasPlagas_Embryo_Superior</ThingDef>
+		</descriptionHyperlinks>
 		<displayPriority>1001</displayPriority>
 		<iconPath>UI/Icons/Xenotypes/Plaga_Superior</iconPath>
 		<inheritable>false</inheritable>

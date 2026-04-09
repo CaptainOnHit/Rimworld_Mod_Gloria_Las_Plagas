@@ -4,17 +4,21 @@
 		<defName>CCDevelopment_LasPlagas_ExtractParasite</defName>
 		<label>extract las Plagas Parasite</label>
 		<description>Some amber deposits contain living Plaga Parasites preserved for eons. A careful extraction can yield a dormant specimen, ready for implantation.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CCDevelopment_LasPlagas_Amber</ThingDef>
+			<ThingDef>CCDevelopment_LasPlagas_Embryo</ThingDef>
+		</descriptionHyperlinks>
 		<jobString>Extracting Plaga Parasite</jobString>
 		<recipeUsers>
 			<li>DrugLab</li>
 		</recipeUsers>
-		<workAmount>400</workAmount>
+		<workAmount>700</workAmount>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 		<workSkill>Intellectual</workSkill>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_CookMeal</soundWorking>
 		<skillRequirements>
-			<Medicine>6</Medicine>
+			<Medicine>8</Medicine>
 		</skillRequirements>
 		<researchPrerequisite>MedicineProduction</researchPrerequisite>
 		 <ingredients>
@@ -44,11 +48,15 @@
 		<defName>CCDevelopment_LasPlagas_ExtractParasite_Superior</defName>
 		<label>extract las Plagas Parasite (Superior Species)</label>
 		<description>Occasionally, amber yields a rarer Plaga Parasite of the superior Species. These specimens are significantly more potent than the subordinate Species but also far more dangerous for the host.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CCDevelopment_LasPlagas_Amber</ThingDef>
+			<ThingDef>CCDevelopment_LasPlagas_Embryo_Superior</ThingDef>
+		</descriptionHyperlinks>
 		<jobString>Extracting Plaga Parasite</jobString>
 		<recipeUsers>
 			<li>DrugLab</li>
 		</recipeUsers>
-		<workAmount>1200</workAmount>
+		<workAmount>1400</workAmount>
 		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
 		<workSkill>Intellectual</workSkill>
 		<effectWorking>Cook</effectWorking>
