@@ -15,8 +15,11 @@
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<genes>
+			<li>Mood_Sanguine</li>
 			<li>RobustDigestion</li>
 			<li>WoundHealing_Fast</li>
+			<li>Pain_Reduced</li>
+			<li>Robust</li>
 			<li>Sterile</li>
 			<li>Superclotting</li>
 			<li>AptitudeStrong_Melee</li>
@@ -45,7 +48,12 @@
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<genes>
 			<li>CCDevelopment_LasPlagas_Guadana_Head_Gene</li>
+			<li>Mood_Sanguine</li>
+			<li>Immunity_Strong</li>
 			<li>RobustDigestion</li>
+			<li>Pain_Reduced</li>
+			<li>Robust</li>
+			<li>UVSensitivity_Mild</li>
 			<li>WoundHealing_Fast</li>
 			<li>Sterile</li>
 			<li>Superclotting</li>
@@ -73,6 +81,11 @@
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<genes>
 			<li>CCDevelopment_LasPlagas_Mandibula_Head_Gene</li>
+			<li>Mood_Sanguine</li>
+			<li>Immunity_Strong</li>
+			<li>Pain_Reduced</li>
+			<li>Robust</li>
+			<li>UVSensitivity_Mild</li>
 			<li>RobustDigestion</li>
 			<li>WoundHealing_Fast</li>
 			<li>Sterile</li>
@@ -99,9 +112,11 @@
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<genes>
-			<li>RobustDigestion</li>
+			<li>CCDevelopment_LasPlagas_SuperiorPlaga_Gene</li>
 			<li>WoundHealing_Fast</li>
+			<li>Immunity_Strong</li>
 			<li>Sterile</li>
+			<li>Robust</li>
 			<li>Superclotting</li>
 			<li>AptitudeStrong_Melee</li>
 			<li>AptitudeStrong_Construction</li>
@@ -112,7 +127,5 @@
 			<li>AptitudeStrong_Intellectual</li>
 		</genes>
 	</XenotypeDef>
-	
-	
 
 </Defs>

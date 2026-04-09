@@ -3,40 +3,20 @@
   "WorkspaceRootPath": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|m:\\steam\\steamapps\\common\\rimworld\\mods\\glorialasplagasgitrepo\\gloria las plagas\\source\\glorialasplagas\\glorialasplagas\\recipe_addhediff_plagacheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|solutionrelative:glorialasplagas\\recipe_addhediff_plagacheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|m:\\steam\\steamapps\\common\\rimworld\\mods\\glorialasplagasgitrepo\\gloria las plagas\\source\\glorialasplagas\\glorialasplagas\\recipeworker_removeparasite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|solutionrelative:glorialasplagas\\recipeworker_removeparasite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|m:\\steam\\steamapps\\common\\rimworld\\mods\\glorialasplagasgitrepo\\gloria las plagas\\source\\glorialasplagas\\glorialasplagas\\hediffcomp_factiondisassociation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|solutionrelative:glorialasplagas\\hediffcomp_factiondisassociation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\glorialasplagas\\hediffcomp_lasplagastransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|solutionrelative:glorialasplagas\\hediffcomp_lasplagastransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\glorialasplagas\\hediffcomp_plagasparasite_subordinate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|solutionrelative:glorialasplagas\\hediffcomp_plagasparasite_subordinate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\glorialasplagas\\hediffcompproperties_lasplagastransform_superior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|solutionrelative:glorialasplagas\\hediffcompproperties_lasplagastransform_superior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\glorialasplagas\\hediffcomp_lasplagastransform_superior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|solutionrelative:glorialasplagas\\hediffcomp_lasplagastransform_superior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|m:\\steam\\steamapps\\common\\rimworld\\mods\\glorialasplagasgitrepo\\gloria las plagas\\source\\glorialasplagas\\glorialasplagas\\hediffcompproperties_factiondisassociation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|solutionrelative:glorialasplagas\\hediffcompproperties_factiondisassociation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\glorialasplagas\\hediffcompproperties_lasplagastransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|solutionrelative:glorialasplagas\\hediffcompproperties_lasplagastransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\glorialasplagas\\hediffcompproperties_plagasparasite_subordinate .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|solutionrelative:glorialasplagas\\hediffcompproperties_plagasparasite_subordinate .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\glorialasplagas\\harmonyforbidhatpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37980D4E-5562-4F03-9D9E-035AAF144C09}|GloriaLasPlagas\\GloriaLasPlagas.csproj|solutionrelative:glorialasplagas\\harmonyforbidhatpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,119 +35,59 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Recipe_AddHediff_PlagaCheck.cs",
-              "DocumentMoniker": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\Recipe_AddHediff_PlagaCheck.cs",
-              "RelativeDocumentMoniker": "GloriaLasPlagas\\Recipe_AddHediff_PlagaCheck.cs",
-              "ToolTip": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\Recipe_AddHediff_PlagaCheck.cs",
-              "RelativeToolTip": "GloriaLasPlagas\\Recipe_AddHediff_PlagaCheck.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Title": "HediffComp_FactionDisassociation.cs",
+              "DocumentMoniker": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffComp_FactionDisassociation.cs",
+              "RelativeDocumentMoniker": "GloriaLasPlagas\\HediffComp_FactionDisassociation.cs",
+              "ToolTip": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffComp_FactionDisassociation.cs",
+              "RelativeToolTip": "GloriaLasPlagas\\HediffComp_FactionDisassociation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T18:59:07.006Z",
+              "WhenOpened": "2026-04-09T20:45:34.142Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HediffCompProperties_LasPlagasTransform_Superior.cs",
-              "DocumentMoniker": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffCompProperties_LasPlagasTransform_Superior.cs",
-              "RelativeDocumentMoniker": "GloriaLasPlagas\\HediffCompProperties_LasPlagasTransform_Superior.cs",
-              "ToolTip": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffCompProperties_LasPlagasTransform_Superior.cs",
-              "RelativeToolTip": "GloriaLasPlagas\\HediffCompProperties_LasPlagasTransform_Superior.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T18:43:41.679Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HediffComp_LasPlagasTransform.cs",
-              "DocumentMoniker": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffComp_LasPlagasTransform.cs",
-              "RelativeDocumentMoniker": "GloriaLasPlagas\\HediffComp_LasPlagasTransform.cs",
-              "ToolTip": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffComp_LasPlagasTransform.cs",
-              "RelativeToolTip": "GloriaLasPlagas\\HediffComp_LasPlagasTransform.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBYAAAANAAAAAAAAAA==",
+              "Title": "HediffCompProperties_FactionDisassociation.cs",
+              "DocumentMoniker": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffCompProperties_FactionDisassociation.cs",
+              "RelativeDocumentMoniker": "GloriaLasPlagas\\HediffCompProperties_FactionDisassociation.cs",
+              "ToolTip": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffCompProperties_FactionDisassociation.cs",
+              "RelativeToolTip": "GloriaLasPlagas\\HediffCompProperties_FactionDisassociation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T18:30:48.057Z",
+              "WhenOpened": "2026-04-09T20:44:17.302Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HediffCompProperties_PlagasParasite_Subordinate .cs",
-              "DocumentMoniker": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffCompProperties_PlagasParasite_Subordinate .cs",
-              "RelativeDocumentMoniker": "GloriaLasPlagas\\HediffCompProperties_PlagasParasite_Subordinate .cs",
-              "ToolTip": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffCompProperties_PlagasParasite_Subordinate .cs",
-              "RelativeToolTip": "GloriaLasPlagas\\HediffCompProperties_PlagasParasite_Subordinate .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T20:44:35.165Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HediffCompProperties_LasPlagasTransform.cs",
-              "DocumentMoniker": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffCompProperties_LasPlagasTransform.cs",
-              "RelativeDocumentMoniker": "GloriaLasPlagas\\HediffCompProperties_LasPlagasTransform.cs",
-              "ToolTip": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffCompProperties_LasPlagasTransform.cs",
-              "RelativeToolTip": "GloriaLasPlagas\\HediffCompProperties_LasPlagasTransform.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T16:29:44.309Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HarmonyForbidHatPatch.cs",
-              "DocumentMoniker": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HarmonyForbidHatPatch.cs",
-              "RelativeDocumentMoniker": "GloriaLasPlagas\\HarmonyForbidHatPatch.cs",
-              "ToolTip": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HarmonyForbidHatPatch.cs",
-              "RelativeToolTip": "GloriaLasPlagas\\HarmonyForbidHatPatch.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAowCEAAACpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T22:55:29.709Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HediffComp_LasPlagasTransform_Superior.cs",
-              "DocumentMoniker": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffComp_LasPlagasTransform_Superior.cs",
-              "RelativeDocumentMoniker": "GloriaLasPlagas\\HediffComp_LasPlagasTransform_Superior.cs",
-              "ToolTip": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffComp_LasPlagasTransform_Superior.cs",
-              "RelativeToolTip": "GloriaLasPlagas\\HediffComp_LasPlagasTransform_Superior.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T18:37:50.668Z"
             }
           ]
         },
         {
           "DockedWidth": 109,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RecipeWorker_RemoveParasite.cs",
-              "DocumentMoniker": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\RecipeWorker_RemoveParasite.cs",
-              "RelativeDocumentMoniker": "GloriaLasPlagas\\RecipeWorker_RemoveParasite.cs",
-              "ToolTip": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\RecipeWorker_RemoveParasite.cs",
-              "RelativeToolTip": "GloriaLasPlagas\\RecipeWorker_RemoveParasite.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "HediffCompProperties_LasPlagasTransform.cs",
+              "DocumentMoniker": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffCompProperties_LasPlagasTransform.cs",
+              "RelativeDocumentMoniker": "GloriaLasPlagas\\HediffCompProperties_LasPlagasTransform.cs",
+              "ToolTip": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffCompProperties_LasPlagasTransform.cs",
+              "RelativeToolTip": "GloriaLasPlagas\\HediffCompProperties_LasPlagasTransform.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T17:13:52.104Z",
+              "WhenOpened": "2026-04-07T16:29:44.309Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HediffComp_PlagasParasite_Subordinate.cs",
-              "DocumentMoniker": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffComp_PlagasParasite_Subordinate.cs",
-              "RelativeDocumentMoniker": "GloriaLasPlagas\\HediffComp_PlagasParasite_Subordinate.cs",
-              "ToolTip": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffComp_PlagasParasite_Subordinate.cs",
-              "RelativeToolTip": "GloriaLasPlagas\\HediffComp_PlagasParasite_Subordinate.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAmwBcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "HediffComp_LasPlagasTransform.cs",
+              "DocumentMoniker": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffComp_LasPlagasTransform.cs",
+              "RelativeDocumentMoniker": "GloriaLasPlagas\\HediffComp_LasPlagasTransform.cs",
+              "ToolTip": "M:\\Steam\\steamapps\\common\\RimWorld\\Mods\\GloriaLasPlagasGitRepo\\Gloria Las Plagas\\Source\\GloriaLasPlagas\\GloriaLasPlagas\\HediffComp_LasPlagasTransform.cs",
+              "RelativeToolTip": "GloriaLasPlagas\\HediffComp_LasPlagasTransform.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwDgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T16:30:14.407Z",
+              "WhenOpened": "2026-04-07T18:30:48.057Z",
               "EditorCaption": ""
             }
           ]

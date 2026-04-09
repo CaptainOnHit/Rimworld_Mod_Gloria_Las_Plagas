@@ -29,5 +29,101 @@
 			<li Class="CCDevelopment.LasPlagas.CompProperties_AbilityEffect_EatHead"></li>
 		</comps>
 	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>CCDevelopment_LasPlagas_TransformClaw</defName>
+		<label>transform monstrous (claw)</label>
+		<description>The Plaga Parasite erupts through one of the host's arms, replacing it with giant claw. Incapable of any form of work, but far deadlier for it.</description>
+		<descriptionHyperlinks>
+			<HediffDef>CCDevelopment_LasPlagas_ClawArm</HediffDef>
+		</descriptionHyperlinks>
+		<cooldownTicksRange>500</cooldownTicksRange>
+		<iconPath>UI/Icons/Abilities/EatHead_Ability_Icon</iconPath>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<stunTargetWhileCasting>false</stunTargetWhileCasting>
+		<ai_IsOffensive>false</ai_IsOffensive>
+		<aiCanUse>true</aiCanUse>
+		<targetRequired>false</targetRequired>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<range>-1</range>
+			<drawAimPie>true</drawAimPie>
+			<warmupTime>4</warmupTime>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetBloodfeeders>false</canTargetBloodfeeders>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetAnimals>false</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CCDevelopment.LasPlagas.CompProperties_AbilityTransformArm">
+				<whichNewArm>Claw</whichNewArm>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef>
+		<defName>CCDevelopment_LasPlagas_TransformBlade</defName>
+		<label>transform monstrous (blade)</label>
+		<description>The Plaga Parasite erupts through one of the host's arms, replacing it with a blade-like limb. Incapable of any form of work, but far deadlier for it.</description>
+		<descriptionHyperlinks>
+			<HediffDef>CCDevelopment_LasPlagas_BladeArm</HediffDef>
+		</descriptionHyperlinks>
+		<cooldownTicksRange>500</cooldownTicksRange>
+		<iconPath>UI/Icons/Abilities/EatHead_Ability_Icon</iconPath>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<stunTargetWhileCasting>false</stunTargetWhileCasting>
+		<ai_IsOffensive>false</ai_IsOffensive>
+		<aiCanUse>true</aiCanUse>
+		<targetRequired>false</targetRequired>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<range>-1</range>
+			<drawAimPie>true</drawAimPie>
+			<warmupTime>4</warmupTime>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetBloodfeeders>false</canTargetBloodfeeders>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetAnimals>false</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CCDevelopment.LasPlagas.CompProperties_AbilityTransformArm">
+				<whichNewArm>Blade</whichNewArm>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef>
+    <defName>CCDevelopment_LasPlagas_Bladelunge</defName>
+    <label>bladelunge</label>
+    <description>Jump</description>
+    <iconPath>UI/Abilities/Longjump</iconPath>
+    <cooldownTicksRange>60</cooldownTicksRange>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>0.5</warmupTime>
+      <range>19.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+  </AbilityDef>
 
 </Defs>

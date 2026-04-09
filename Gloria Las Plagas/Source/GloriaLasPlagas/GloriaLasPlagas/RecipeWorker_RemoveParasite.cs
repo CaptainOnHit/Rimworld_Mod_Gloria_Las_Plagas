@@ -11,8 +11,8 @@ namespace CCDevelopment.LasPlagas
 {
     public class RecipeWorker_RemoveParasite : Recipe_Surgery
     {
-        List<HediffDef> requiredHediffs = new List<HediffDef>();
-
+        List<HediffDef> xenotypeHediffs = new List<HediffDef>();
+        List<HediffDef> limbMutationHediffs = new List<HediffDef>();
 
         public RecipeWorker_RemoveParasite() 
         {
@@ -30,7 +30,7 @@ namespace CCDevelopment.LasPlagas
             if (pawn == null) return false;
 
 
-            foreach(HediffDef hediff in requiredHediffs)
+            foreach(HediffDef hediff in xenotypeHediffs)
             {
                 if (pawn.health.hediffSet.HasHediff(hediff, false))
                 {
@@ -43,11 +43,16 @@ namespace CCDevelopment.LasPlagas
         {
             for(int i = 0; i < 3; i++)
             {
-                requiredHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier" + i));
+                xenotypeHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier" + i));
             }
-            requiredHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_LasPlagasParasite_Superior_Tier"));
-            requiredHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_Infection_Superior"));
-            requiredHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_Infection_Subordinate"));
+            xenotypeHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_LasPlagasParasite_Superior_Tier"));
+            xenotypeHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_Infection_Superior"));
+            xenotypeHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_Infection_Subordinate"));
+
+            limbMutationHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_GuadanaHead"));
+            limbMutationHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_MandibulaHead"));
+            limbMutationHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_ClawArm"));
+            limbMutationHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_BladeArm"));
 
         }
 
@@ -61,7 +66,7 @@ namespace CCDevelopment.LasPlagas
                 }
                 TaleRecorder.RecordTale(TaleDefOf.DidSurgery, billDoer, pawn);
             }
-            foreach (HediffDef hediff in requiredHediffs)
+            foreach (HediffDef hediff in xenotypeHediffs)
             {
                 if (pawn.health.hediffSet.HasHediff(hediff, false))
                 {
@@ -84,15 +89,17 @@ namespace CCDevelopment.LasPlagas
                                 shatterSpine(pawn);
                             }
                             positiveRemoval(pawn);
-                            setNewFaction(pawn);
+                            addFactionDisassociation(pawn);
                             break;
                         case "CCDevelopment_LasPlagas_LasPlagasParasite_Superior_Tier":
+                            removeMutatedLimbs(pawn);
                             shatterSpine(pawn);
                             positiveRemoval(pawn);
-                            setNewFaction(pawn);
+                            addFactionDisassociation(pawn);
                             break;
                         default:
-                            setNewFaction(pawn);
+                            removeMutatedLimbs(pawn);
+                            addFactionDisassociation(pawn);
                             negativeRemoval(pawn);
                             break;
                     }
@@ -105,20 +112,11 @@ namespace CCDevelopment.LasPlagas
                 ReportViolation(pawn, billDoer, pawn.HomeFaction, -10);
             }
         }
-        public void setNewFaction(Pawn pawn)
+        private void addFactionDisassociation(Pawn pawn)
         {
-            Random rand = new Random();
-            float decisionValue = (float)rand.NextDouble();
-            if (decisionValue <= 0.5)
-            {
-                pawn.SetFaction(Find.FactionManager.RandomNonHostileFaction());
-            }
-            else {
-                pawn.SetFaction(Find.FactionManager.RandomEnemyFaction());
-            }
-
+            pawn.health.AddHediff(HediffMaker.MakeHediff(HediffDef.Named("CCDevelopment_LasPlagas_FactionDisassociation"),pawn));
         }
-        public void shatterSpine(Pawn pawn)
+        private void shatterSpine(Pawn pawn)
         {
             BodyPartDef spineDef = DefDatabase<BodyPartDef>.GetNamedSilentFail("Spine");
             BodyPartRecord spine = pawn.RaceProps.body.GetPartsWithDef(spineDef).FirstOrDefault();
@@ -126,17 +124,49 @@ namespace CCDevelopment.LasPlagas
             shatteredSpine.Severity = 9999f;
             pawn.health.AddHediff(shatteredSpine, spine);
         }
-        public void negativeRemoval(Pawn pawn)
+        private void removeMutatedLimbs(Pawn pawn)
         {
-            BodyPartRecord head = pawn.RaceProps.body.GetPartsWithDef(BodyPartDefOf.Head).FirstOrDefault();
-            Hediff missingHead = HediffMaker.MakeHediff(HediffDefOf.MissingBodyPart, pawn, head);
-            pawn.health.AddHediff(missingHead, head);
+            if (pawn.health.hediffSet.HasHediff(limbMutationHediffs[0]) || pawn.health.hediffSet.HasHediff(limbMutationHediffs[1]))
+            {
+                BodyPartRecord head = pawn.RaceProps.body.GetPartsWithDef(BodyPartDefOf.Head).FirstOrDefault();
+                Hediff missingHead = HediffMaker.MakeHediff(HediffDefOf.MissingBodyPart, pawn, head);
+                pawn.health.AddHediff(missingHead, head);
+            }
+            if (pawn.health.hediffSet.HasHediff(limbMutationHediffs[2]))
+            {
+                Hediff arm1 = pawn.health.hediffSet.GetFirstHediffOfDef(limbMutationHediffs[2]);
+                if (arm1 != null)
+                {
+                    pawn.health.RemoveHediff(arm1);
+                }
+                Hediff arm2 = pawn.health.hediffSet.GetFirstHediffOfDef(limbMutationHediffs[2]);
+                if (arm2 != null)
+                {
+                    pawn.health.RemoveHediff(arm2);
+                }
+            }
+            if (pawn.health.hediffSet.HasHediff(limbMutationHediffs[3]))
+            {
+                Hediff arm1 = pawn.health.hediffSet.GetFirstHediffOfDef(limbMutationHediffs[3]);
+                if (arm1 != null)
+                {
+                    pawn.health.RemoveHediff(arm1);
+                }
+                Hediff arm2 = pawn.health.hediffSet.GetFirstHediffOfDef(limbMutationHediffs[3]);
+                if (arm2 != null)
+                {
+                    pawn.health.RemoveHediff(arm2);
+                }
+            }
+        }
+        private void negativeRemoval(Pawn pawn)
+        {
             Messages.Message(
                 pawn.NameShortColored + "'s parasite has been removed... together with their head.",
                 pawn,
                 MessageTypeDefOf.NegativeEvent);
         }
-        public void positiveRemoval(Pawn pawn)
+        private void positiveRemoval(Pawn pawn)
         {
             Messages.Message(
                                 pawn.NameShortColored + " has recovered from the plaga parasite.",

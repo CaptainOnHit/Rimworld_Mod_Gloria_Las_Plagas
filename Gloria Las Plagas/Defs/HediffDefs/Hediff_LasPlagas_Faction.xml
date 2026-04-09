@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>CCDevelopment_LasPlagas_FactionDisassociation</defName>
+		<label>faction disassociation</label>
+		<description>After being freed from the Plaga Parasite the Pawn is unsure whether it belongs to its current Faction.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>CCDevelopment_LasPlagas_Surgery_RemoveParasite</RecipeDef>
+		</descriptionHyperlinks>
+		<hediffClass>HediffWithComps</hediffClass>
+		<lethalSeverity>1.01</lethalSeverity>  <!--just for the progress bar -->
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<tendable>false</tendable>
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>1</severityPerDayNotImmune>
+			</li>
+			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_FactionDisassociation"/>
+		</comps>
+	</HediffDef>	
+</Defs>
