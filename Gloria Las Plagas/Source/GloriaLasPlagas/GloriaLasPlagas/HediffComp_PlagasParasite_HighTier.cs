@@ -8,16 +8,15 @@ using Verse;
 
 namespace CCDevelopment.LasPlagas
 {
-    public class HediffComp_PlagasParasite_Superior : HediffComp
+    public class HediffComp_PlagasParasite_HighTier : HediffComp
     {
-        public HediffCompProperties_PlagasParasite_Superior Props
+        public HediffCompProperties_PlagasParasite_HighTier Props
         {
-            get { return (HediffCompProperties_PlagasParasite_Superior)props; }
+            get { return (HediffCompProperties_PlagasParasite_HighTier)props; }
         }
         public override void CompPostMake()
         {
             Pawn.genes?.SetXenotype(Props.currentStagePlagaXenotype);
         }
     }
-   
 }

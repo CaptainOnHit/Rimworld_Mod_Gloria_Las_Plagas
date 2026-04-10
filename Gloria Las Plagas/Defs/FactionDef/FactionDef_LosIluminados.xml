@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<FactionDef ParentName="FactionBase">
+		<defName>CCDevelopment_LasPlagas_LosIluminados</defName>
+		<label>los Iluminados</label>
+		<description>religious cult</description>
+		<factionIconPath>World/WorldObjects/Expanding/TownRough</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<descriptionHyperlinks>
+			<ThingDef>CCDevelopment_LasPlagas_Embryo</ThingDef>
+			<ThingDef>CCDevelopment_LasPlagas_Embryo_Superior</ThingDef>
+			<ThingDef>CCDevelopment_LasPlagas_Embryo_Dominant</ThingDef>
+		</descriptionHyperlinks>
+		
+		<pawnSingular>Iluminado</pawnSingular>
+		<pawnsPlural>Iluminados</pawnsPlural>
+		<leaderTitle>Prophet</leaderTitle>
+		
+		<categoryTag>Iluminados</categoryTag>
+		
+		<xenotypeSet>
+			<xenotypeChances>
+				<CCDevelopment_LasPlagas_Ganado>0.6</CCDevelopment_LasPlagas_Ganado>
+				<CCDevelopment_LasPlagas_Guadana>0.16</CCDevelopment_LasPlagas_Guadana>
+				<CCDevelopment_LasPlagas_Mandibula>0.13</CCDevelopment_LasPlagas_Mandibula>
+				<CCDevelopment_LasPlagas_Superior>0.1</CCDevelopment_LasPlagas_Superior>
+				<CCDevelopment_LasPlagas_Dominant>0.01</CCDevelopment_LasPlagas_Dominant>
+			</xenotypeChances>
+		</xenotypeSet>
+		
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>		
+		
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Pirate</li>
+			  <li>Tribal</li>
+			  <li>Outlander</li>
+			  <li>Offworld</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		
+		<techLevel>Industrial</techLevel>
+		
+		<listOrderPriority>50</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+
+		
+		<canStageAttacks>true</canStageAttacks>
+		<permanentEnemy>true</permanentEnemy>
+		
+		 <allowedArrivalTemperatureRange>5~80</allowedArrivalTemperatureRange>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+		</disallowedMemes>
+		
+		
+	
+		<raidLootValueFromPointsCurve>
+		  <points>
+			<li>(0, 0)</li>
+		  </points>
+		</raidLootValueFromPointsCurve>
+		<maxPawnCostPerTotalPointsCurve>
+		  <points>
+			<li>(0,70)</li>
+			<li>(90,100)</li>
+			<li>(200,120)</li>
+			<li>(400,130)</li>
+			<li>(700,200)</li>
+			<li>(1000,400)</li>
+			<li>(10000,1000)</li>
+			<li>(100000,10000)</li>
+		  </points>
+		</maxPawnCostPerTotalPointsCurve>
+		
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<pawnGroupMakers>
+		  <li>
+			<!-- Normal fights, standard mix -->
+			<kindDef>Combat</kindDef>
+			<options>
+				<CCDevelopment_LasPlagas_Illuminado_Villager_Ganado>2</CCDevelopment_LasPlagas_Illuminado_Villager_Ganado>
+				<CCDevelopment_LasPlagas_Illuminado_Villager_Guadana>1</CCDevelopment_LasPlagas_Illuminado_Villager_Guadana>
+				<CCDevelopment_LasPlagas_Illuminado_Villager_Mandibula>0</CCDevelopment_LasPlagas_Illuminado_Villager_Mandibula>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Guard_Ganado>7</CCDevelopment_LasPlagas_Illuminado_Guard_Ganado>
+				<CCDevelopment_LasPlagas_Illuminado_Guard_Guadana>4</CCDevelopment_LasPlagas_Illuminado_Guard_Guadana>
+				<CCDevelopment_LasPlagas_Illuminado_Guard_Mandibula>2</CCDevelopment_LasPlagas_Illuminado_Guard_Mandibula>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Elite_Ganado>10</CCDevelopment_LasPlagas_Illuminado_Elite_Ganado>
+				<CCDevelopment_LasPlagas_Illuminado_Elite_Guadana>7</CCDevelopment_LasPlagas_Illuminado_Elite_Guadana>
+				<CCDevelopment_LasPlagas_Illuminado_Elite_Mandibula>3</CCDevelopment_LasPlagas_Illuminado_Elite_Mandibula>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Superior>3</CCDevelopment_LasPlagas_Illuminado_Superior>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Dominant>1</CCDevelopment_LasPlagas_Illuminado_Dominant>
+				
+				
+				<Grenadier_Destructive>2</Grenadier_Destructive>
+				<Mercenary_Slasher>6</Mercenary_Slasher>
+				<Mercenary_Elite>7</Mercenary_Elite>
+			</options>
+		  </li>
+		  <li>
+			<kindDef>Peaceful</kindDef>
+			<options>
+				<CCDevelopment_LasPlagas_Illuminado_Villager_Ganado>10</CCDevelopment_LasPlagas_Illuminado_Villager_Ganado>
+				<CCDevelopment_LasPlagas_Illuminado_Villager_Guadana>4</CCDevelopment_LasPlagas_Illuminado_Villager_Guadana>
+				<CCDevelopment_LasPlagas_Illuminado_Villager_Mandibula>2</CCDevelopment_LasPlagas_Illuminado_Villager_Mandibula>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Guard_Ganado>10</CCDevelopment_LasPlagas_Illuminado_Guard_Ganado>
+				<CCDevelopment_LasPlagas_Illuminado_Guard_Guadana>4</CCDevelopment_LasPlagas_Illuminado_Guard_Guadana>
+				<CCDevelopment_LasPlagas_Illuminado_Guard_Mandibula>2</CCDevelopment_LasPlagas_Illuminado_Guard_Mandibula>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Elite_Ganado>2</CCDevelopment_LasPlagas_Illuminado_Elite_Ganado>
+				<CCDevelopment_LasPlagas_Illuminado_Elite_Guadana>1</CCDevelopment_LasPlagas_Illuminado_Elite_Guadana>
+				<CCDevelopment_LasPlagas_Illuminado_Elite_Mandibula>0</CCDevelopment_LasPlagas_Illuminado_Elite_Mandibula>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Superior>4</CCDevelopment_LasPlagas_Illuminado_Superior>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Dominant>2</CCDevelopment_LasPlagas_Illuminado_Dominant>
+				
+				
+				<Grenadier_Destructive>0</Grenadier_Destructive>
+				<Mercenary_Slasher>2</Mercenary_Slasher>
+				<Mercenary_Elite>2</Mercenary_Elite>
+			</options>
+		  </li>
+		  <li>
+			<kindDef>Trader</kindDef>
+			<traders>
+			  <Town_Trader>1</Town_Trader>
+			</traders>
+			<carriers>
+			  <Muffalo>6</Muffalo>
+			  <Dromedary>5</Dromedary>
+			  <Alpaca>2</Alpaca>
+			  <Elephant>1</Elephant>
+			</carriers>
+			<guards>
+				<CCDevelopment_LasPlagas_Illuminado_Villager_Ganado>5</CCDevelopment_LasPlagas_Illuminado_Villager_Ganado>
+				<CCDevelopment_LasPlagas_Illuminado_Villager_Guadana>1</CCDevelopment_LasPlagas_Illuminado_Villager_Guadana>
+				<CCDevelopment_LasPlagas_Illuminado_Villager_Mandibula>1</CCDevelopment_LasPlagas_Illuminado_Villager_Mandibula>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Guard_Ganado>10</CCDevelopment_LasPlagas_Illuminado_Guard_Ganado>
+				<CCDevelopment_LasPlagas_Illuminado_Guard_Guadana>5</CCDevelopment_LasPlagas_Illuminado_Guard_Guadana>
+				<CCDevelopment_LasPlagas_Illuminado_Guard_Mandibula>3</CCDevelopment_LasPlagas_Illuminado_Guard_Mandibula>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Elite_Ganado>12</CCDevelopment_LasPlagas_Illuminado_Elite_Ganado>
+				<CCDevelopment_LasPlagas_Illuminado_Elite_Guadana>5</CCDevelopment_LasPlagas_Illuminado_Elite_Guadana>
+				<CCDevelopment_LasPlagas_Illuminado_Elite_Mandibula>3</CCDevelopment_LasPlagas_Illuminado_Elite_Mandibula>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Superior>4</CCDevelopment_LasPlagas_Illuminado_Superior>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Dominant>0</CCDevelopment_LasPlagas_Illuminado_Dominant>
+				
+				
+				<Grenadier_Destructive>0</Grenadier_Destructive>
+				<Mercenary_Slasher>4</Mercenary_Slasher>
+				<Mercenary_Elite>6</Mercenary_Elite>
+			</guards>
+		  </li>
+		  <li>
+			<kindDef>Settlement</kindDef>
+			<options>
+				<CCDevelopment_LasPlagas_Illuminado_Villager_Ganado>14</CCDevelopment_LasPlagas_Illuminado_Villager_Ganado>
+				<CCDevelopment_LasPlagas_Illuminado_Villager_Guadana>5</CCDevelopment_LasPlagas_Illuminado_Villager_Guadana>
+				<CCDevelopment_LasPlagas_Illuminado_Villager_Mandibula>2</CCDevelopment_LasPlagas_Illuminado_Villager_Mandibula>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Guard_Ganado>14</CCDevelopment_LasPlagas_Illuminado_Guard_Ganado>
+				<CCDevelopment_LasPlagas_Illuminado_Guard_Guadana>5</CCDevelopment_LasPlagas_Illuminado_Guard_Guadana>
+				<CCDevelopment_LasPlagas_Illuminado_Guard_Mandibula>2</CCDevelopment_LasPlagas_Illuminado_Guard_Mandibula>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Elite_Ganado>14</CCDevelopment_LasPlagas_Illuminado_Elite_Ganado>
+				<CCDevelopment_LasPlagas_Illuminado_Elite_Guadana>5</CCDevelopment_LasPlagas_Illuminado_Elite_Guadana>
+				<CCDevelopment_LasPlagas_Illuminado_Elite_Mandibula>2</CCDevelopment_LasPlagas_Illuminado_Elite_Mandibula>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Superior>6</CCDevelopment_LasPlagas_Illuminado_Superior>
+				
+				<CCDevelopment_LasPlagas_Illuminado_Dominant>3</CCDevelopment_LasPlagas_Illuminado_Dominant>
+				
+				
+				<Grenadier_Destructive>0</Grenadier_Destructive>
+				<Mercenary_Slasher>0</Mercenary_Slasher>
+				<Mercenary_Elite>2</Mercenary_Elite>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Miners</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <Miner>1</Miner>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Hunters</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <Hunter>1</Hunter>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Loggers</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <Logger>1</Logger>
+			</options>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">
+			<kindDef>Farmers</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <Farmer>1</Farmer>
+			</options>
+		  </li>
+		</pawnGroupMakers>	
+	</FactionDef>
+	
+</Defs>

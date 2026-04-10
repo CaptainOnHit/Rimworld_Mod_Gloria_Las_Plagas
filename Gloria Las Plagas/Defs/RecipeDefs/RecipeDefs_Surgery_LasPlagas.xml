@@ -8,6 +8,7 @@
 		<descriptionHyperlinks>
 			<HediffDef>CCDevelopment_LasPlagas_Infection_Subordinate</HediffDef>
 		</descriptionHyperlinks>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
 		<workerClass>CCDevelopment.LasPlagas.Recipe_AddHediff_PlagaCheck</workerClass>
 		<addsHediff>CCDevelopment_LasPlagas_Infection_Subordinate</addsHediff>
 		<jobString>Infecting TargetA.</jobString>
@@ -57,6 +58,7 @@
 		<descriptionHyperlinks>
 			<HediffDef>CCDevelopment_LasPlagas_Infection_Superior</HediffDef>
 		</descriptionHyperlinks>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
 		<workerClass>CCDevelopment.LasPlagas.Recipe_AddHediff_PlagaCheck</workerClass>
 		<addsHediff>CCDevelopment_LasPlagas_Infection_Superior</addsHediff>
 		<jobString>Infecting TargetA.</jobString>
@@ -99,6 +101,55 @@
 	</RecipeDef>
 	
 	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>CCDevelopment_LasPlagas_Surgery_Dominant</defName>
+		<label>las Plagas surgery (dominant)</label>
+		<description>A Plaga Parasite of the dominant Species is implanted into the subject's body. It attaches itself to the spine and integrates into the central nervous system, slowly eroding the host's independence.</description>
+		<descriptionHyperlinks>
+			<HediffDef>CCDevelopment_LasPlagas_Infection_Dominant</HediffDef>
+		</descriptionHyperlinks>
+		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<workerClass>CCDevelopment.LasPlagas.Recipe_AddHediff_PlagaCheck</workerClass>
+		<addsHediff>CCDevelopment_LasPlagas_Infection_Dominant</addsHediff>
+		<jobString>Infecting TargetA.</jobString>
+		<workAmount>2000</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<targetsBodyPart>false</targetsBodyPart>
+		<isViolation>true</isViolation>
+		<deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
+		<developmentalStageFilter>Adult</developmentalStageFilter> <!-- Las Plagas kills every child -->
+		<surgeryOutcomeEffect IsNull="True" /> <!-- Always succeeds -->
+		<recipeUsers>
+		<li>Human</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CCDevelopment_LasPlagas_Embryo_Dominant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CCDevelopment_LasPlagas_Embryo_Dominant</li>
+			</thingDefs>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>CCDevelopment_LasPlagas_Surgery_RemoveParasite</defName>
 		<label>remove Plaga Parasite</label>
 		<description>An attempt to surgically remove the Plaga Parasite from an infected host. The parasite's grip on the nervous system makes a clean extraction nearly impossible. Results are unpredictable and may even cause greater harm.</description>
@@ -132,4 +183,5 @@
 		</fixedIngredientFilter>
 		<workerClass>CCDevelopment.LasPlagas.RecipeWorker_RemoveParasite</workerClass>
 	</RecipeDef>
+
 </Defs>

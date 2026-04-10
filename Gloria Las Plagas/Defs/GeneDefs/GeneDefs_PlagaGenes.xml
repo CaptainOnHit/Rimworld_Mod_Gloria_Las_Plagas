@@ -51,16 +51,39 @@
 			</tags>
 		</beardTagFilter>
 	</GeneDef>
+	
 	<GeneDef>
 		<defName>CCDevelopment_LasPlagas_SuperiorPlaga_Gene</defName>
 		<label>superior Plaga</label>
 		<description>Plaga Parasites of the superior species allow the host to assume monstrous forms.</description>
 		<descriptionHyperlinks>
-			<HediffDef>CCDevelopment_LasPlagas_MandibulaHead</HediffDef>
+			<AbilityDef>CCDevelopment_LasPlagas_TransformClaw</AbilityDef>
+			<AbilityDef>CCDevelopment_LasPlagas_TransformBlade</AbilityDef>
 		</descriptionHyperlinks>
 		<abilities>
 			<li>CCDevelopment_LasPlagas_TransformClaw</li>
 			<li>CCDevelopment_LasPlagas_TransformBlade</li>
+		</abilities>
+		<biostatMet>10</biostatMet>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>CCDevelopment_LasPlagas_DominantPlaga_Gene</defName>
+		<label>dominant Plaga</label>
+		<description>Plaga Parasites of the dominant species allow the host to assume monstrous forms. Furthermore, they are abled to directly transmit commands to other parasite, thereby increasing their efficiency.</description>
+		<descriptionHyperlinks>
+			<AbilityDef>CCDevelopment_LasPlagas_TransformClaw</AbilityDef>
+			<AbilityDef>CCDevelopment_LasPlagas_TransformBlade</AbilityDef>
+		</descriptionHyperlinks>
+		<statFactors>
+			<SocialImpact>1.25</SocialImpact>
+		</statFactors>
+		<abilities>
+			<li>CCDevelopment_LasPlagas_TransformClaw</li>
+			<li>CCDevelopment_LasPlagas_TransformBlade</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">CombatCommand</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Convert</li>
 		</abilities>
 		<biostatMet>10</biostatMet>
 	</GeneDef>

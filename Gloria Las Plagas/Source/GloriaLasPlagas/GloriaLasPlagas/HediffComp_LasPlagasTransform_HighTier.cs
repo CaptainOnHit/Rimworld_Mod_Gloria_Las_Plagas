@@ -8,13 +8,11 @@ using Verse;
 
 namespace CCDevelopment.LasPlagas
 {
-    public class HediffComp_LasPlagasTransform_Superior : HediffComp
+    public class HediffComp_LasPlagasTransform_HighTier : HediffComp
     {
-
-
-        public HediffCompProperties_LasPlagasTransform_Superior Props
+        public HediffCompProperties_LasPlagasTransform_HighTier Props
         {
-            get { return (HediffCompProperties_LasPlagasTransform_Superior)props; }
+            get { return (HediffCompProperties_LasPlagasTransform_HighTier)props; }
         }
         public override void CompPostTick(ref float severityAdjustment)
         {
@@ -22,7 +20,7 @@ namespace CCDevelopment.LasPlagas
 
             if (Pawn != null && parent.Severity >= 1f)
             {
-                HediffDef newHediff = HediffDef.Named("CCDevelopment_LasPlagas_LasPlagasParasite_Superior_Tier");
+                HediffDef newHediff = HediffDef.Named(Props.xenotypeHediffName);
 
                 if (Pawn.Faction != Faction.OfPlayer)
                 {
@@ -38,7 +36,6 @@ namespace CCDevelopment.LasPlagas
                 }
                 Pawn.health.AddHediff(newHediff);
                 Pawn.health.RemoveHediff(parent);
-
             }
         }
     }

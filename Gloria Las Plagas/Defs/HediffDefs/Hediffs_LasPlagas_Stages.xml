@@ -2,7 +2,7 @@
 <Defs>
 	<HediffDef>
 		<defName>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier0</defName>
-		<label>plagas Parasite (Ganado)</label>
+		<label>plaga Parasite (Ganado)</label>
 		<description>A human host fully infected by a Plaga Parasite of the subordinate species in its first stage of development. Ganados exhibit increased physical strength, though their capacity for fine motor skills and craftsmanship is noticeably diminished. They act entirely in service of the parasite's will.</description>
 		<descriptionHyperlinks>
 			<XenotypeDef>CCDevelopment_LasPlagas_Ganado</XenotypeDef>
@@ -18,7 +18,7 @@
 	
 	<HediffDef>
 		<defName>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier1</defName>
-		<label>plagas Parasite (Guadana)</label>
+		<label>plaga Parasite (Guadana)</label>
 		<description>A Plaga Parasite in the second stage its development. The parasite has erupted through the host's skull, replacing the head with scythe-like tentacles.</description>
 		<descriptionHyperlinks>
 			<XenotypeDef>CCDevelopment_LasPlagas_Guadana</XenotypeDef>
@@ -34,7 +34,7 @@
 	
 	<HediffDef>
 		<defName>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier2</defName>
-		<label>plagas Parasite (Mandíbula)</label>
+		<label>plaga Parasite (Mandíbula)</label>
 		<description>A Plaga Parasite in the third stage of its development. The parasite's tentacles have hardened into rigid limbs, used to grab and restrain prey.</description>
 		<descriptionHyperlinks>
 			<XenotypeDef>CCDevelopment_LasPlagas_Mandibula</XenotypeDef>
@@ -50,15 +50,30 @@
 	
 	<HediffDef>
 		<defName>CCDevelopment_LasPlagas_LasPlagasParasite_Superior_Tier</defName>
-		<label>plagas Parasite (Superior)</label>
+		<label>plaga Parasite (Superior)</label>
 		<description>A human host fully infected by a Plaga Parasite of the superior species. Unlike the subordinate species, superior hosts retain their cognitive functions while remaining entirely under the parasite's control, making them significantly more capable and more dangerous than common Ganados.</description>
 		<descriptionHyperlinks>
 			<XenotypeDef>CCDevelopment_LasPlagas_Superior</XenotypeDef>
 		</descriptionHyperlinks>
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
-			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_PlagasParasite_Superior">
+			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_PlagasParasite_HighTier">
 				<currentStagePlagaXenotype>CCDevelopment_LasPlagas_Superior</currentStagePlagaXenotype>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>CCDevelopment_LasPlagas_LasPlagasParasite_Dominant_Tier</defName>
+		<label>plaga Parasite (Dominant)</label>
+		<description>A human host fully infected by a Plaga Parasite of the dominant species. Unlike the subordinate species, superior hosts retain their cognitive functions while remaining entirely under the parasite's control, making them significantly more capable and more dangerous than common Ganados.</description>
+		<descriptionHyperlinks>
+			<XenotypeDef>CCDevelopment_LasPlagas_Dominant</XenotypeDef>
+		</descriptionHyperlinks>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_PlagasParasite_HighTier">
+				<currentStagePlagaXenotype>CCDevelopment_LasPlagas_Dominant</currentStagePlagaXenotype>
 			</li>
 		</comps>
 	</HediffDef>

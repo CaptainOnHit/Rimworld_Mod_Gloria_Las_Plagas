@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnKindDef Name="IlluminadoBase" Abstract="True">
+		<race>Human</race>
+		<combatPower>40</combatPower>
+		<isFighter>true</isFighter>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>99</maxGenerationAge>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<gearHealthRange>0.4~1.4</gearHealthRange>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<disallowedTraits>
+		  <li>Nudist</li>
+		</disallowedTraits>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		<apparelTags>
+		  <li>IndustrialBasic</li>
+		  <li>IndustrialAdvanced</li>
+		  <li>IndustrialMilitaryBasic</li>
+		  <li>IndustrialMilitaryAdvanced</li>
+		  <li>SpacerMilitary</li>
+		  <li>BeltDefensePop</li>
+		</apparelTags>
+	</PawnKindDef>
+	
+	<!-- all below could have been implemented in a better way but atm im too lazy sowey -->
+	<!-- Ganados -->
+	
+	<PawnKindDef ParentName="IlluminadoBase">
+		<defName>CCDevelopment_LasPlagas_Illuminado_Villager_Ganado</defName>
+		<label>ganado villager</label>
+		<initialWillRange>25</initialWillRange>
+		<initialResistanceRange>14~45</initialResistanceRange>
+		<weaponTags>
+			<li>NeolithicMeleeDestructive</li>
+			<li>NeolithicMeleeDecent</li>
+			<li>Neolithic</li>
+			<li>NeolithicMeleeAdvanced</li>
+			<li>NeolithicMeleeBasic</li>
+			<li>NeolithicRangedDecent</li>
+			<li>NeolithicRangedHeavy</li>
+		</weaponTags>
+		<weaponMoney>42~300</weaponMoney>
+		<apparelMoney>1~1000</apparelMoney>
+		<startingHediffs>
+			<li>
+				<def>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier0</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+	<PawnKindDef ParentName="IlluminadoBase">
+		<defName>CCDevelopment_LasPlagas_Illuminado_Guard_Ganado</defName>
+		<label>ganado guard</label>
+		<initialWillRange>25</initialWillRange>
+		<initialResistanceRange>14~45</initialResistanceRange>
+		<weaponTags>
+			<li>NeolithicMeleeDestructive</li>
+			<li>NeolithicMeleeDecent</li>
+			<li>Neolithic</li>
+			<li>NeolithicMeleeAdvanced</li>
+			<li>NeolithicMeleeBasic</li>
+			<li>NeolithicRangedDecent</li>
+			<li>NeolithicRangedHeavy</li>
+			<li>MedievalMeleeAdvanced</li>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<weaponMoney>300~900</weaponMoney>
+		<apparelMoney>1000~1200</apparelMoney>
+		<startingHediffs>
+			<li>
+				<def>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier0</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+	<PawnKindDef ParentName="IlluminadoBase">
+		<defName>CCDevelopment_LasPlagas_Illuminado_Elite_Ganado</defName>
+		<label>ganado elite</label>
+		<initialWillRange>25</initialWillRange>
+		<initialResistanceRange>14~45</initialResistanceRange>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeBasic</li>
+			<li>ShortShots</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<weaponMoney>900~2000</weaponMoney>
+		<apparelMoney>1800~2600</apparelMoney>
+		<startingHediffs>
+			<li>
+				<def>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier0</def>
+			</li>
+		</startingHediffs>
+		<combatPower>100</combatPower>
+	</PawnKindDef>
+	
+	<!-- Guadanas -->
+	
+	<PawnKindDef ParentName="IlluminadoBase">
+		<defName>CCDevelopment_LasPlagas_Illuminado_Villager_Guadana</defName>
+		<label>guadaña villager</label>
+		<initialWillRange>25</initialWillRange>
+		<initialResistanceRange>14~45</initialResistanceRange>
+		<weaponTags>
+			<li>NeolithicMeleeDestructive</li>
+			<li>NeolithicMeleeDecent</li>
+			<li>Neolithic</li>
+			<li>NeolithicMeleeAdvanced</li>
+			<li>NeolithicMeleeBasic</li>
+			<li>NeolithicRangedDecent</li>
+			<li>NeolithicRangedHeavy</li>
+		</weaponTags>
+		<weaponMoney>42~300</weaponMoney>
+		<apparelMoney>1~1000</apparelMoney>
+		<startingHediffs>
+			<li>
+				<def>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier1</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+	<PawnKindDef ParentName="IlluminadoBase">
+		<defName>CCDevelopment_LasPlagas_Illuminado_Guard_Guadana</defName>
+		<label>guadaña guard</label>
+		<initialWillRange>25</initialWillRange>
+		<initialResistanceRange>14~45</initialResistanceRange>
+		<weaponTags>
+			<li>NeolithicMeleeDestructive</li>
+			<li>NeolithicMeleeDecent</li>
+			<li>Neolithic</li>
+			<li>NeolithicMeleeAdvanced</li>
+			<li>NeolithicMeleeBasic</li>
+			<li>NeolithicRangedDecent</li>
+			<li>NeolithicRangedHeavy</li>
+			<li>MedievalMeleeAdvanced</li>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<weaponMoney>300~900</weaponMoney>
+		<apparelMoney>1000~1200</apparelMoney>
+		<startingHediffs>
+			<li>
+				<def>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier1</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+	<PawnKindDef ParentName="IlluminadoBase">
+		<defName>CCDevelopment_LasPlagas_Illuminado_Elite_Guadana</defName>
+		<label>guadaña elite</label>
+		<initialWillRange>25</initialWillRange>
+		<initialResistanceRange>14~45</initialResistanceRange>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeBasic</li>
+			<li>ShortShots</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<weaponMoney>900~2000</weaponMoney>
+		<apparelMoney>1800~2600</apparelMoney>
+		<startingHediffs>
+			<li>
+				<def>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier1</def>
+			</li>
+		</startingHediffs>
+		<combatPower>100</combatPower>
+	</PawnKindDef>
+	
+	<!-- Mandibulas -->
+	
+	<PawnKindDef ParentName="IlluminadoBase">
+		<defName>CCDevelopment_LasPlagas_Illuminado_Villager_Mandibula</defName>
+		<label>mandíbula villager</label>
+		<initialWillRange>25</initialWillRange>
+		<initialResistanceRange>14~45</initialResistanceRange>
+		<weaponTags>
+			<li>NeolithicMeleeDestructive</li>
+			<li>NeolithicMeleeDecent</li>
+			<li>Neolithic</li>
+			<li>NeolithicMeleeAdvanced</li>
+			<li>NeolithicMeleeBasic</li>
+			<li>NeolithicRangedDecent</li>
+			<li>NeolithicRangedHeavy</li>
+		</weaponTags>
+		<weaponMoney>42~300</weaponMoney>
+		<apparelMoney>1~1000</apparelMoney>
+		<startingHediffs>
+			<li>
+				<def>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier2</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+	<PawnKindDef ParentName="IlluminadoBase">
+		<defName>CCDevelopment_LasPlagas_Illuminado_Guard_Mandibula</defName>
+		<label>mandíbula guard</label>
+		<initialWillRange>25</initialWillRange>
+		<initialResistanceRange>14~45</initialResistanceRange>
+		<weaponTags>
+			<li>NeolithicMeleeDestructive</li>
+			<li>NeolithicMeleeDecent</li>
+			<li>Neolithic</li>
+			<li>NeolithicMeleeAdvanced</li>
+			<li>NeolithicMeleeBasic</li>
+			<li>NeolithicRangedDecent</li>
+			<li>NeolithicRangedHeavy</li>
+			<li>MedievalMeleeAdvanced</li>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<weaponMoney>300~900</weaponMoney>
+		<apparelMoney>1000~1200</apparelMoney>
+		<startingHediffs>
+			<li>
+				<def>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier2</def>
+			</li>
+		</startingHediffs>
+	</PawnKindDef>
+	<PawnKindDef ParentName="IlluminadoBase">
+		<defName>CCDevelopment_LasPlagas_Illuminado_Elite_Mandibula</defName>
+		<label>mandíbula elite</label>
+		<initialWillRange>25</initialWillRange>
+		<initialResistanceRange>14~45</initialResistanceRange>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeBasic</li>
+			<li>ShortShots</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<weaponMoney>900~2000</weaponMoney>
+		<apparelMoney>1800~2600</apparelMoney>
+		<startingHediffs>
+			<li>
+				<def>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier2</def>
+			</li>
+		</startingHediffs>
+		<combatPower>100</combatPower>
+	</PawnKindDef>
+	
+	<!-- Superior --> 
+	
+	<PawnKindDef ParentName="IlluminadoBase">
+		<defName>CCDevelopment_LasPlagas_Illuminado_Superior</defName>
+		<label>superior soldier</label>
+		<initialWillRange>60</initialWillRange>
+		<initialResistanceRange>50~60</initialResistanceRange>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeBasic</li>
+			<li>ShortShots</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>Minigun</li>
+			<li>SpacerGun</li>
+		</weaponTags>
+		<weaponMoney>900~4000</weaponMoney>
+		<apparelMoney>3000~4000</apparelMoney>
+		<startingHediffs>
+			<li>
+				<def>CCDevelopment_LasPlagas_LasPlagasParasite_Superior_Tier</def>
+			</li>
+		</startingHediffs>
+		<combatPower>130</combatPower>
+	</PawnKindDef>
+	
+	<!-- Dominant -->
+	
+	<PawnKindDef ParentName="IlluminadoBase">
+		<defName>CCDevelopment_LasPlagas_Illuminado_Dominant</defName>
+		<label>plaga prophet</label>
+		<initialWillRange>60</initialWillRange>
+		<initialResistanceRange>50~60</initialResistanceRange>
+		<weaponTags>
+			<li>MedievalMeleeAdvanced</li>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeBasic</li>
+			<li>ShortShots</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>SpacerGun</li>
+			<li>UltratechMelee</li>
+		</weaponTags>
+		<weaponMoney>3000~10000</weaponMoney>
+		<apparelMoney>4000~10000</apparelMoney>
+		<factionLeader>true</factionLeader>
+		<startingHediffs>
+			<li>
+				<def>CCDevelopment_LasPlagas_LasPlagasParasite_Dominant_Tier</def>
+			</li>
+		</startingHediffs>
+		<combatPower>180</combatPower>
+	</PawnKindDef>
+</Defs>
+	

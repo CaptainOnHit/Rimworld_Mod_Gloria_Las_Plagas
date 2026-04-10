@@ -12,7 +12,6 @@ namespace CCDevelopment.LasPlagas
     {
         public XenotypeDef currentStagePlagaXenotype;
         public HediffDef currentPlagaParasiteStage;
-        
 
         public HediffCompProperties_PlagasParasite_Subordinate()
         {

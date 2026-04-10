@@ -83,7 +83,66 @@
 			<li Class="HediffCompProperties_Immunizable">
 				<severityPerDayNotImmune>0.05</severityPerDayNotImmune>
 			</li>
-			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_LasPlagasTransform_Superior"/>
+			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_LasPlagasTransform_HighTier">
+				<xenotypeHediffName>CCDevelopment_LasPlagas_LasPlagasParasite_Superior_Tier</xenotypeHediffName>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<painOffset>0.1</painOffset>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>major</label>
+				<painOffset>0.2</painOffset>
+			</li>
+			<li>
+				<minSeverity>0.69</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>false</lifeThreatening>
+				<painOffset>0.3</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.85</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>false</lifeThreatening>
+				<painOffset>0.45</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.7</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef Parentname="InfectionBase">
+		<defName>CCDevelopment_LasPlagas_Infection_Dominant</defName>
+		<label>las Plagas (Dominant)</label>
+		<description>A living Plaga Parasite is attached to the host's spine. As the infection progresses, the parasite exerts increasing control over the host's behavior and body. Removal becomes more dangerous the longer it is left untreated.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>CCDevelopment_LasPlagas_Surgery_RemoveParasite</RecipeDef>
+		</descriptionHyperlinks>
+		<hediffClass>HediffWithComps</hediffClass>
+		<makesSickThought>true</makesSickThought>
+		<lethalSeverity>1.01</lethalSeverity>  <!--just for the progress bar -->
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<tendable>false</tendable>
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.05</severityPerDayNotImmune>
+			</li>
+			<li Class="CCDevelopment.LasPlagas.HediffCompProperties_LasPlagasTransform_HighTier">
+				<xenotypeHediffName>CCDevelopment_LasPlagas_LasPlagasParasite_Dominant_Tier</xenotypeHediffName>
+			</li>
 		</comps>
 		<stages>
 			<li>

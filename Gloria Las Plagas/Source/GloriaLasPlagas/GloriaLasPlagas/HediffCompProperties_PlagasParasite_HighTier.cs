@@ -8,12 +8,12 @@ using Verse;
 
 namespace CCDevelopment.LasPlagas
 {
-    public class HediffCompProperties_PlagasParasite_Superior : HediffCompProperties
+    public class HediffCompProperties_PlagasParasite_HighTier : HediffCompProperties
     {
         public XenotypeDef currentStagePlagaXenotype;
-        public HediffCompProperties_PlagasParasite_Superior()
+        public HediffCompProperties_PlagasParasite_HighTier()
         {
-            compClass = typeof(HediffComp_PlagasParasite_Superior);
+            compClass = typeof(HediffComp_PlagasParasite_HighTier);
         }
     }
 }

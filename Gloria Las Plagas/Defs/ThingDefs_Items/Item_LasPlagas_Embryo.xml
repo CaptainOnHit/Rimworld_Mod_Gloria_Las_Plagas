@@ -51,5 +51,30 @@
 			<Mass>1.0</Mass>
 		</statBases>
 	</ThingDef>
-
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>CCDevelopment_LasPlagas_Embryo_Dominant</defName>
+		<label>plaga embryo (dominant)</label>
+		<description>A Plaga parasite of the dominant species in its embryonic stage, fragile on its own, but fully capable of maturing once implanted into a living host.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>CCDevelopment_LasPlagas_Surgery_Dominant</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Resource/Plaga_Superior_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconForStackCount>1</uiIconForStackCount>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>25</stackLimit>
+		 <statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<statBases>
+			<Mass>1.0</Mass>
+		</statBases>
+	</ThingDef>
 </Defs>
