@@ -64,7 +64,7 @@
 		<skillRequirements>
 			<Medicine>12</Medicine>
 		</skillRequirements>
-		<researchPrerequisite>MedicineProduction</researchPrerequisite>
+		<researchPrerequisite>VitalsMonitor</researchPrerequisite>
 		 <ingredients>
 			<li>
 				<filter>

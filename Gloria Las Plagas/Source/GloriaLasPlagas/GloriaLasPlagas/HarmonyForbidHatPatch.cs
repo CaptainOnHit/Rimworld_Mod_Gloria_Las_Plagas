@@ -15,8 +15,6 @@ namespace CCDevelopment.LasPlagas
     public static class HarmonyForbidHatPatch
     {
 
-
-
         static MethodBase TargetMethod()
         {
             return AccessTools.Method(
