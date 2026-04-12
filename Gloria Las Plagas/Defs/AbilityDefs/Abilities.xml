@@ -38,7 +38,7 @@
 			<HediffDef>CCDevelopment_LasPlagas_ClawArm</HediffDef>
 		</descriptionHyperlinks>
 		<cooldownTicksRange>500</cooldownTicksRange>
-		<iconPath>UI/Icons/Abilities/EatHead_Ability_Icon</iconPath>
+		<iconPath>UI/Icons/Abilities/Grow_Claw_Ability_Icon</iconPath>
 		<jobDef>CastAbilityOnThingMelee</jobDef>
 		<stunTargetWhileCasting>false</stunTargetWhileCasting>
 		<ai_IsOffensive>false</ai_IsOffensive>
@@ -72,7 +72,7 @@
 			<HediffDef>CCDevelopment_LasPlagas_BladeArm</HediffDef>
 		</descriptionHyperlinks>
 		<cooldownTicksRange>500</cooldownTicksRange>
-		<iconPath>UI/Icons/Abilities/EatHead_Ability_Icon</iconPath>
+		<iconPath>UI/Icons/Abilities/Grow_Blade_Arm_Ability_Icon</iconPath>
 		<jobDef>CastAbilityOnThingMelee</jobDef>
 		<stunTargetWhileCasting>false</stunTargetWhileCasting>
 		<ai_IsOffensive>false</ai_IsOffensive>

@@ -60,7 +60,7 @@
 			<RecipeDef>CCDevelopment_LasPlagas_Surgery_Dominant</RecipeDef>
 		</descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Item/Resource/Plaga_Superior_Item</texPath>
+			<texPath>Things/Item/Resource/Plaga_Dominant_Item</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<uiIconForStackCount>1</uiIconForStackCount>

@@ -5,7 +5,7 @@
 		<defName>CCDevelopment_LasPlagas_LosIluminados</defName>
 		<label>los Iluminados</label>
 		<description>religious cult</description>
-		<factionIconPath>World/WorldObjects/Expanding/TownRough</factionIconPath>
+		<factionIconPath>World/WorldObjects/Los_Iluminados_Settlement</factionIconPath>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<descriptionHyperlinks>
 			<ThingDef>CCDevelopment_LasPlagas_Embryo</ThingDef>

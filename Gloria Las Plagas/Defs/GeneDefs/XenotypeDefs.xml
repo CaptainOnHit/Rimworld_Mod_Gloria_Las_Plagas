@@ -136,7 +136,7 @@
 			<ThingDef>CCDevelopment_LasPlagas_Embryo_Superior</ThingDef>
 		</descriptionHyperlinks>
 		<displayPriority>1001</displayPriority>
-		<iconPath>UI/Icons/Xenotypes/Plaga_Superior</iconPath>
+		<iconPath>UI/Icons/Xenotypes/Plaga_Dominant</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<genes>
