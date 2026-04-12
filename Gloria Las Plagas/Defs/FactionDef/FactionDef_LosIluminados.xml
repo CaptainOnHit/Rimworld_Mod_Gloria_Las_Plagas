@@ -100,11 +100,6 @@
 				<CCDevelopment_LasPlagas_Illuminado_Superior>3</CCDevelopment_LasPlagas_Illuminado_Superior>
 				
 				<CCDevelopment_LasPlagas_Illuminado_Dominant>1</CCDevelopment_LasPlagas_Illuminado_Dominant>
-				
-				
-				<Grenadier_Destructive>2</Grenadier_Destructive>
-				<Mercenary_Slasher>6</Mercenary_Slasher>
-				<Mercenary_Elite>7</Mercenary_Elite>
 			</options>
 		  </li>
 		  <li>
@@ -125,11 +120,6 @@
 				<CCDevelopment_LasPlagas_Illuminado_Superior>4</CCDevelopment_LasPlagas_Illuminado_Superior>
 				
 				<CCDevelopment_LasPlagas_Illuminado_Dominant>2</CCDevelopment_LasPlagas_Illuminado_Dominant>
-				
-				
-				<Grenadier_Destructive>0</Grenadier_Destructive>
-				<Mercenary_Slasher>2</Mercenary_Slasher>
-				<Mercenary_Elite>2</Mercenary_Elite>
 			</options>
 		  </li>
 		  <li>
@@ -159,11 +149,6 @@
 				<CCDevelopment_LasPlagas_Illuminado_Superior>4</CCDevelopment_LasPlagas_Illuminado_Superior>
 				
 				<CCDevelopment_LasPlagas_Illuminado_Dominant>0</CCDevelopment_LasPlagas_Illuminado_Dominant>
-				
-				
-				<Grenadier_Destructive>0</Grenadier_Destructive>
-				<Mercenary_Slasher>4</Mercenary_Slasher>
-				<Mercenary_Elite>6</Mercenary_Elite>
 			</guards>
 		  </li>
 		  <li>
@@ -184,11 +169,6 @@
 				<CCDevelopment_LasPlagas_Illuminado_Superior>6</CCDevelopment_LasPlagas_Illuminado_Superior>
 				
 				<CCDevelopment_LasPlagas_Illuminado_Dominant>3</CCDevelopment_LasPlagas_Illuminado_Dominant>
-				
-				
-				<Grenadier_Destructive>0</Grenadier_Destructive>
-				<Mercenary_Slasher>0</Mercenary_Slasher>
-				<Mercenary_Elite>2</Mercenary_Elite>
 			</options>
 		  </li>
 		  <li MayRequire="Ludeon.RimWorld.Ideology">
