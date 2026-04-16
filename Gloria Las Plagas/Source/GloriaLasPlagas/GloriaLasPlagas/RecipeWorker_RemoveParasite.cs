@@ -46,8 +46,10 @@ namespace CCDevelopment.LasPlagas
                 xenotypeHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier" + i));
             }
             xenotypeHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_LasPlagasParasite_Superior_Tier"));
+            xenotypeHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_LasPlagasParasite_Dominant_Tier"));
             xenotypeHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_Infection_Superior"));
             xenotypeHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_Infection_Subordinate"));
+            xenotypeHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_Infection_Dominant"));
 
             limbMutationHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_GuadanaHead"));
             limbMutationHediffs.Add(HediffDef.Named("CCDevelopment_LasPlagas_MandibulaHead"));
@@ -83,6 +85,9 @@ namespace CCDevelopment.LasPlagas
                         case "CCDevelopment_LasPlagas_Infection_Subordinate":
                             positiveRemoval(pawn);
                             break;
+                        case "CCDevelopment_LasPlagas_Infection_Dominant":
+                            positiveRemoval(pawn);
+                            break;
                         case "CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier0":
                             if (decisionValue <= 0.3)
                             {
@@ -92,6 +97,12 @@ namespace CCDevelopment.LasPlagas
                             addFactionDisassociation(pawn);
                             break;
                         case "CCDevelopment_LasPlagas_LasPlagasParasite_Superior_Tier":
+                            removeMutatedLimbs(pawn);
+                            shatterSpine(pawn);
+                            positiveRemoval(pawn);
+                            addFactionDisassociation(pawn);
+                            break;
+                        case "CCDevelopment_LasPlagas_LasPlagasParasite_Dominant_Tier":
                             removeMutatedLimbs(pawn);
                             shatterSpine(pawn);
                             positiveRemoval(pawn);
