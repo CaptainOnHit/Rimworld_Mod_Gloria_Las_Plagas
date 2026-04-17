@@ -64,6 +64,9 @@
     <Compile Include="CompProperties_UseEffectFindEmber.cs" />
     <Compile Include="Comp_AbilityTransformArm.cs" />
     <Compile Include="Comp_UseEffect_FindEmber.cs" />
+    <Compile Include="Gene_Dominant.cs" />
+    <Compile Include="Gene_Superior.cs" />
+    <Compile Include="Gene_Ganado.cs" />
     <Compile Include="Gene_MandibulaHead.cs" />
     <Compile Include="HarmonyApplyPlagaHediffPatch.cs" />
     <Compile Include="HarmonyForbidHatPatch.cs" />

@@ -27,6 +27,8 @@ namespace CCDevelopment.LasPlagas
             Find.BattleLog.Add(logEntry);
 
             DamageWorker.DamageResult result = target.Pawn.TakeDamage(damageInfo);
+
+            parent.pawn.needs.food.CurLevel += 0.5f;
         }
     }
 }

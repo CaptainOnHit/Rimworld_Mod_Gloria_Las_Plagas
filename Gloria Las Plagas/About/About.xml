@@ -4,9 +4,7 @@
 	<author>CCDevelopment</author>
 	<packageId>CCDevelopment.GloriaLasPlagas.0001</packageId>
 	<supportedVersions><li>1.6</li></supportedVersions>
-	<description>This mod adds Las Plagas as a possible Operation, which infects the Host with Las Plagas.
-	After the infection is completed the pawn gets recruited (if not happend so far) and labotamizes it, so it can only perform trivial work.
-	</description>
+	<description>This Mod adds the Los Iluminados Cult from Resident Evil 4 alongside its subject of worship to the Rim. Seek out the Plaga Parasite in all its variants and harness its power by infecting your colonists!</description>
 	<modDependencies>
     <li>
         <packageId>brrainz.harmony</packageId>

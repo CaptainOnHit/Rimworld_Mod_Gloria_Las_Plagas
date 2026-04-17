@@ -21,7 +21,10 @@ namespace CCDevelopment.LasPlagas
         }
         public override void CompPostMake()
         {
-            Pawn.genes?.SetXenotype(Props.currentStagePlagaXenotype);
+            if (Pawn.genes.Xenotype.defName != Props.currentStagePlagaXenotype.defName)
+            {
+                Pawn.genes?.SetXenotype(Props.currentStagePlagaXenotype);
+            }
             nextTierTick = Find.TickManager.TicksGame + (daysUntilNextTier * ticksPerDay);
             //only drop Headwear if Guadana or Mandibula
             if (Props.currentPlagaParasiteStage.defName == "CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier0") return;
@@ -57,6 +60,11 @@ namespace CCDevelopment.LasPlagas
                     newHediffName = plagaParasiteSubBaseName + "1";
                     break;
                 case plagaParasiteSubBaseName + "1":
+                    Hediff guadanaHead = Pawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("CCDevelopment_LasPlagas_GuadanaHead"));
+                    if (guadanaHead != null)
+                    {
+                        Pawn.health.hediffSet.hediffs.Remove(guadanaHead);
+                    }
                     newHediffName = plagaParasiteSubBaseName + "2";
                     break;
                 

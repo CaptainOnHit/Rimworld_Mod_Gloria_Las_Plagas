@@ -16,7 +16,10 @@ namespace CCDevelopment.LasPlagas
         }
         public override void CompPostMake()
         {
-            Pawn.genes?.SetXenotype(Props.currentStagePlagaXenotype);
+            if (Pawn.genes.Xenotype.defName != Props.currentStagePlagaXenotype.defName)
+            {
+                Pawn.genes?.SetXenotype(Props.currentStagePlagaXenotype);
+            }
         }
     }
 }

@@ -9,12 +9,12 @@
 			<XenotypeDef>CCDevelopment_LasPlagas_Guadana</XenotypeDef>
 			<ThingDef>CCDevelopment_LasPlagas_Embryo</ThingDef>
 		</descriptionHyperlinks>
-		
 		<displayPriority>1001</displayPriority>
 		<iconPath>UI/Icons/Xenotypes/Ganado</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<genes>
+			<li>CCDevelopment_LasPlagas_GanadoPlaga_Gene</li>
 			<li>Mood_Sanguine</li>
 			<li>RobustDigestion</li>
 			<li>WoundHealing_Fast</li>
@@ -29,7 +29,6 @@
 			<li>AptitudeTerrible_Medicine</li>
 			<li>AptitudeTerrible_Social</li>
 			<li>AptitudeTerrible_Intellectual</li>
-
 		</genes>
 	</XenotypeDef>
 	

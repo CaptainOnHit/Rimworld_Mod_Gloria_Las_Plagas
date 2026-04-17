@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+	<GeneDef>
+		<defName>CCDevelopment_LasPlagas_GanadoPlaga_Gene</defName>
+		<label>ganado Plaga</label>
+		<description>A human host fully infected by a Plaga Parasite of the subordinate species in its first stage of development. Ganados exhibit increased physical strength, though their capacity for fine motor skills and craftsmanship is noticeably diminished. They act entirely in service of the parasite's will.</description>
+		<descriptionHyperlinks>
+			<HediffDef>CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier0</HediffDef>
+		</descriptionHyperlinks>
+		<geneClass>CCDevelopment.LasPlagas.Gene_Ganado</geneClass>
+		<iconPath>UI/Icons/Genes/Gene_Ganado</iconPath>
+	</GeneDef>
+
 	<GeneDef>
 		<defName>CCDevelopment_LasPlagas_Guadana_Head_Gene</defName>
 		<label>guadana hosted head</label>
@@ -62,7 +74,8 @@
 			<AbilityDef>CCDevelopment_LasPlagas_TransformClaw</AbilityDef>
 			<AbilityDef>CCDevelopment_LasPlagas_TransformBlade</AbilityDef>
 		</descriptionHyperlinks>
-		 <iconPath>UI/Icons/Genes/Gene_Superior</iconPath>
+		<geneClass>CCDevelopment.LasPlagas.Gene_Superior</geneClass>
+		<iconPath>UI/Icons/Genes/Gene_Superior</iconPath>
 		<abilities>
 			<li>CCDevelopment_LasPlagas_TransformClaw</li>
 			<li>CCDevelopment_LasPlagas_TransformBlade</li>
@@ -78,7 +91,8 @@
 			<AbilityDef>CCDevelopment_LasPlagas_TransformClaw</AbilityDef>
 			<AbilityDef>CCDevelopment_LasPlagas_TransformBlade</AbilityDef>
 		</descriptionHyperlinks>
-		 <iconPath>UI/Icons/Genes/Gene_Dominant</iconPath>
+		<iconPath>UI/Icons/Genes/Gene_Dominant</iconPath>
+		<geneClass>CCDevelopment.LasPlagas.Gene_Dominant</geneClass>
 		<statFactors>
 			<SocialImpact>1.25</SocialImpact>
 		</statFactors>
