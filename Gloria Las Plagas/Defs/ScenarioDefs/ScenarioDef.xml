@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ScenarioDef Name="Crashlanded" ParentName="ScenarioBase">
+		<defName>CCDevelopment_LasPlagas_Scenario</defName>
+		<label>Plaga Cult</label>
+		<description>Having been blessed with a holy body, you find it your divine duty to share this blessing with the inhabitants of the Rim. Starting with only a handful of the holy offspring and some basic resources, you set off to create a cult worthy of your Lord.</description>
+		<scenario>
+			<summary>A host of the dominant species of the Plaga parasite determined to spead its tentacles. </summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>CCDevelopment_LasPlagas_PlayerIPlagaCult</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+				  <def>ConfigurePawnsXenotypes</def>
+				  <pawnChoiceCount>1</pawnChoiceCount>
+				  <customSummary>Start with one dominant plaga</customSummary>
+				  <xenotypeCounts>
+					<li>
+					  <xenotype>CCDevelopment_LasPlagas_Dominant</xenotype>
+					  <count>1</count>
+					  <description>dominant plaga</description>
+					  <requiredAtStart>true</requiredAtStart>
+					  <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+					</li>
+				  </xenotypeCounts>
+				</li>
+				
+				
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+				  <def>PlayerPawnsArriveMethod</def>
+				  <visible>false</visible>
+				  <method>Standing</method>
+				</li>
+				
+				<!-- Player starting things -->
+				<li Class="ScenPart_StartingThing_Defined">
+				  <def>StartingThing_Defined</def>
+				  <thingDef>CCDevelopment_LasPlagas_Embryo</thingDef>
+				  <count>4</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+				  <def>StartingThing_Defined</def>
+				  <thingDef>Silver</thingDef>
+				  <count>1000</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+				  <def>StartingThing_Defined</def>
+				  <thingDef>Gold</thingDef>
+				  <count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+				  <def>StartingThing_Defined</def>
+				  <thingDef>MealSurvivalPack</thingDef>
+				  <count>40</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+				  <def>StartingThing_Defined</def>
+				  <thingDef>MedicineIndustrial</thingDef>
+				  <count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+				  <def>StartingThing_Defined</def>
+				  <thingDef>ComponentIndustrial</thingDef>
+				  <count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+				  <def>StartingThing_Defined</def>
+				  <thingDef>MeleeWeapon_BreachAxe</thingDef>
+				  <stuff>Steel</stuff>
+				</li>
+
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				  <def>ScatterThingsNearPlayerStart</def>
+				  <thingDef>Steel</thingDef>
+				  <count>450</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+				  <def>ScatterThingsNearPlayerStart</def>
+				  <thingDef>WoodLog</thingDef>
+				  <count>300</count>
+				</li>
+				
+				
+				
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>Spread the Plaga! GLORIA LAS PLAGAS</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+			</parts>
+		</scenario>
+	
+	
+	</ScenarioDef>
+
+</Defs>
+  
