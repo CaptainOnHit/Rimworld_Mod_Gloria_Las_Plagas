@@ -2,7 +2,7 @@
 <Defs>
   <HediffDef ParentName="RoleStatBuff">
     <defName>CCDevelopment_LasPlagas_CombatCommandPlagaOnly</defName>
-    <label>Gloria Las Plagas</label>
+    <label>Gloria A Las Plagas</label>
     <description>By stimulating nearby plaga parasites, this person can enhance their focus and durability in combat and thus their battle performance.</description>
     <descriptionHyperlinks>
 		<AbilityDef>CCDevelopment_LasPlagas_CombatCommand</AbilityDef>
@@ -32,7 +32,7 @@
   
   <HediffDef ParentName="RoleStatBuff">
     <defName>CCDevelopment_LasPlagas_CombatCommandBuff</defName>
-    <label>Gloria las Plagas</label>
+    <label>Gloria a las Plagas</label>
     <description>Battle performance is boosted thanks to being near someone who is using the combat command ability.</description>
     <descriptionHyperlinks>
 		<AbilityDef>CCDevelopment_LasPlagas_CombatCommand</AbilityDef>
@@ -58,7 +58,8 @@
           <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
           <MeleeHitChance>3</MeleeHitChance>
           <MeleeCooldownFactor>-0.1</MeleeCooldownFactor>
-		  <WorkSpeedGlobal>0.6</WorkSpeedGlobal>
+		  <IncomingDamageFactor>-0.2</IncomingDamageFactor>
+		  <WorkSpeedGlobal>-0.3</WorkSpeedGlobal>
         </statOffsets>
       </li>
     </stages>

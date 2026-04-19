@@ -128,7 +128,7 @@
 
 	<AbilityDef>
     <defName>CCDevelopment_LasPlagas_CombatCommand</defName>
-    <label>Gloria Las Plagas</label>
+    <label>Gloria A Las Plagas</label>
     <description>Create an aura that stimulates the plaga parasite of everbody nearby to raise their combat skills. The effect lasts 24 hours and remains attached to the caster for the duration.</description>
     <jobDef>CastAbilityOnThing</jobDef>
 	<cooldownTicksRange>720000</cooldownTicksRange>
