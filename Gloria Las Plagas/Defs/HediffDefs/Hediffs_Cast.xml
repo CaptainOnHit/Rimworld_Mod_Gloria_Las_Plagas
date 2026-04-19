@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HediffDef ParentName="RoleStatBuff">
+    <defName>CCDevelopment_LasPlagas_CombatCommandPlagaOnly</defName>
+    <label>Gloria Las Plagas</label>
+    <description>By stimulating nearby plaga parasites, this person can enhance their focus and durability in combat and thus their battle performance.</description>
+    <descriptionHyperlinks>
+		<AbilityDef>CCDevelopment_LasPlagas_CombatCommand</AbilityDef>
+		<HediffDef>CCDevelopment_LasPlagas_CombatCommandBuff</HediffDef>
+	</descriptionHyperlinks>
+	<hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="CCDevelopment.LasPlagas.HediffCompProperties_GiveHediffsInRangePlagaOnly">
+        <range>12</range>
+        <mote>Mote_CombatCommand</mote>
+        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetColonists>true</onlyTargetColonists>
+        </targetingParameters>
+        <hediff>CCDevelopment_LasPlagas_CombatCommandBuff</hediff>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  <HediffDef ParentName="RoleStatBuff">
+    <defName>CCDevelopment_LasPlagas_CombatCommandBuff</defName>
+    <label>Gloria las Plagas</label>
+    <description>Battle performance is boosted thanks to being near someone who is using the combat command ability.</description>
+    <descriptionHyperlinks>
+		<AbilityDef>CCDevelopment_LasPlagas_CombatCommand</AbilityDef>
+		<HediffDef>CCDevelopment_LasPlagas_CombatCommandPlagaOnly</HediffDef>
+	</descriptionHyperlinks>
+	<debugLabelExtra>other</debugLabelExtra>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>false</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_Link">
+        <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+        <maxDistance>10</maxDistance>
+        <customMote>Mote_CombatCommandLinkLine</customMote>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+          <MeleeHitChance>3</MeleeHitChance>
+          <MeleeCooldownFactor>-0.1</MeleeCooldownFactor>
+		  <WorkSpeedGlobal>0.6</WorkSpeedGlobal>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef ParentName="RoleStatBuff">
+    <defName>CCDevelopment_LasPlagas_WorkDrive</defName>
+    <label>plaga work drive</label>
+    <description>The sense of being able to work harder due to a stimulated plaga parasite.</description>
+	<descriptionHyperlinks>
+		<AbilityDef>CCDevelopment_LasPlagas_WorkDrive</AbilityDef>
+	</descriptionHyperlinks>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>
+
+

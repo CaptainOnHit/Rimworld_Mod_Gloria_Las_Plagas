@@ -10,8 +10,8 @@ namespace CCDevelopment.LasPlagas
 {
     public class HediffComp_PlagasParasite_Subordinate : HediffComp
     {
-        private const int daysUntilNextTier = 1;
-        private const int ticksPerDay = 500;
+        private const int daysUntilNextTier = 7;
+        private const int ticksPerDay = 60000;
         private int nextTierTick;
 
 

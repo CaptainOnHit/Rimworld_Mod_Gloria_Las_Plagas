@@ -126,4 +126,146 @@
     <jobDef>CastJump</jobDef>
   </AbilityDef>
 
+	<AbilityDef>
+    <defName>CCDevelopment_LasPlagas_CombatCommand</defName>
+    <label>Gloria Las Plagas</label>
+    <description>Create an aura that stimulates the plaga parasite of everbody nearby to raise their combat skills. The effect lasts 24 hours and remains attached to the caster for the duration.</description>
+    <jobDef>CastAbilityOnThing</jobDef>
+	<cooldownTicksRange>720000</cooldownTicksRange>
+    <targetRequired>False</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <iconPath>UI/Icons/Abilities/Plaga_Combat_Command</iconPath>
+    <warmupMoteSocialSymbol>UI/Icons/Abilities/Plaga_Combat_Command</warmupMoteSocialSymbol>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <uiOrder>3</uiOrder>
+    <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_Duration>1000</Ability_Duration>
+      <Ability_EffectRadius>12.9</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.5</warmupTime>
+      <range>12</range>
+      <drawAimPie>False</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>CCDevelopment_LasPlagas_CombatCommandPlagaOnly</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <AbilityDef>
+    <defName>CCDevelopment_LasPlagas_Convert</defName>
+    <label>plaga convert</label>
+    <description>Connect with someones plaga parasite to attempt to convert them to the speaker's ideoligion. This will reduce the target's certainty in their own beliefs greatly. The certainty reduction depends on the speaker's negotiation ability.</description>
+    <iconPath>UI/Icons/Abilities/Plaga_Convert</iconPath>
+    <warmupMoteSocialSymbol>UI/Icons/Abilities/Plaga_Convert</warmupMoteSocialSymbol>
+    <warmupSound>MoralistAbility_Warmup</warmupSound>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+	<cooldownTicksRange>480000</cooldownTicksRange>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <uiOrder>1</uiOrder>
+    <showWhenDrafted>false</showWhenDrafted>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <comps>
+      <li Class="CCDevelopment.LasPlagas.CompProperties_AbilityPlagaConvert">
+        <successMessage>{INITIATOR_labelShort} has converted {RECIPIENT_labelShort} to {IDEO} with the power of Las Plagas.</successMessage>
+		<failMessage>{INITIATOR_labelShort} failed to convert {RECIPIENT_labelShort}. {RECIPIENT_labelShort} was upset by the attempt, but {RECIPIENT_possessive} certainty fell from {CERTAINTYBEFORE} to {CERTAINTYAFTER}. Do not resist, child.</failMessage>
+        <failedThoughtInitiator>FailedConvertAbilityInitiator</failedThoughtInitiator>
+        <failedThoughtRecipient>FailedConvertAbilityRecipient</failedThoughtRecipient>
+        <convertPowerFactor>10</convertPowerFactor>
+        <sound>MoralistAbility_Resolve</sound>
+      </li>
+      <li Class="CompProperties_AbilityMustBeCapableOf">
+        <workTags>
+          <li>Social</li>
+        </workTags>
+      </li>
+      <li Class="CompProperties_AbilityShowTargetIdeoCertainty" />
+    </comps>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>False</drawAimPie>
+      <range>-1</range>
+      <warmupTime>3.0</warmupTime>
+      <targetParams>
+        <canTargetBuildings>False</canTargetBuildings>
+        <canTargetSubhumans>false</canTargetSubhumans>
+        <neverTargetHostileFaction>True</neverTargetHostileFaction>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+  
+  <AbilityDef>
+    <defName>CCDevelopment_LasPlagas_WorkDrive</defName>
+    <label>plaga work drive</label>
+    <description>Call upon a person's plaga parasite to make them work harder for some time.</description>
+	<descriptionHyperlinks>
+		<HediffDef>CCDevelopment_LasPlagas_WorkDrive</HediffDef>
+	</descriptionHyperlinks>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <iconPath>UI/Icons/Abilities/Plaga_Work_Drive</iconPath>
+    <warmupMoteSocialSymbol>UI/Icons/Abilities/Plaga_Work_Drive</warmupMoteSocialSymbol>
+	<cooldownTicksRange>480000</cooldownTicksRange>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <showWhenDrafted>false</showWhenDrafted>
+    <uiOrder>2</uiOrder>
+    <warmupStartSound>WorkDrive_Warmup</warmupStartSound>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <statBases>
+      <Ability_Duration>3000</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>False</drawAimPie>
+      <range>-1</range>
+      <warmupTime>3.0</warmupTime>
+      <targetParams>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>false</canTargetMechs>
+        <onlyTargetColonists>true</onlyTargetColonists>
+        <canTargetSubhumans>false</canTargetSubhumans>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CCDevelopment.LasPlagas.CompProperties_AbilityGiveHediffPlagaOnly">
+        <hediffDef>CCDevelopment_LasPlagas_WorkDrive</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <applicableToMechs>False</applicableToMechs>
+        <canTargetBaby>False</canTargetBaby>
+      </li>
+      <li Class="CompProperties_AbilitySocialInteraction">
+        <interactionDef>WorkDrive</interactionDef>
+      </li>
+    </comps>
+  </AbilityDef>
 </Defs>

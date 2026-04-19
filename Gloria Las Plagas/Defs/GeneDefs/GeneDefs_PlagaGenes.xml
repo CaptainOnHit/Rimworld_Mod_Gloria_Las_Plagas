@@ -90,6 +90,9 @@
 		<descriptionHyperlinks>
 			<AbilityDef>CCDevelopment_LasPlagas_TransformClaw</AbilityDef>
 			<AbilityDef>CCDevelopment_LasPlagas_TransformBlade</AbilityDef>
+			<AbilityDef>CCDevelopment_LasPlagas_WorkDrive</AbilityDef>
+			<AbilityDef>CCDevelopment_LasPlagas_CombatCommand</AbilityDef>
+			<AbilityDef>CCDevelopment_LasPlagas_Convert</AbilityDef>
 		</descriptionHyperlinks>
 		<iconPath>UI/Icons/Genes/Gene_Dominant</iconPath>
 		<geneClass>CCDevelopment.LasPlagas.Gene_Dominant</geneClass>
@@ -99,9 +102,9 @@
 		<abilities>
 			<li>CCDevelopment_LasPlagas_TransformClaw</li>
 			<li>CCDevelopment_LasPlagas_TransformBlade</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">CombatCommand</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Convert</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">CCDevelopment_LasPlagas_WorkDrive</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">CCDevelopment_LasPlagas_CombatCommand</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">CCDevelopment_LasPlagas_Convert</li>
 		</abilities>
 		<biostatMet>10</biostatMet>
 	</GeneDef>
