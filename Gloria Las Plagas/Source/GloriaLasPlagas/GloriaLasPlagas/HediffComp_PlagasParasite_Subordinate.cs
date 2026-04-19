@@ -10,8 +10,8 @@ namespace CCDevelopment.LasPlagas
 {
     public class HediffComp_PlagasParasite_Subordinate : HediffComp
     {
-        private const int daysUntilNextTier = 7;
-        private const int ticksPerDay = 60000;
+        private const int daysUntilNextTier = 1;
+        private const int ticksPerDay = 500;
         private int nextTierTick;
 
 
@@ -32,6 +32,7 @@ namespace CCDevelopment.LasPlagas
             foreach (var apparel in apparelList)
             {
                 Pawn.apparel.Remove(apparel);
+                if (Pawn.Map == null) continue;
                 GenPlace.TryPlaceThing(apparel, Pawn.Position, Pawn.Map, ThingPlaceMode.Near);
             }
         }

@@ -89,7 +89,7 @@
 				<!-- Game start dialog -->
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<text>Spread the Plaga! GLORIA LAS PLAGAS</text>
+					<text>Having been blessed with a holy body, you find it your divine duty to share this blessing with the inhabitants of the Rim. Starting with only a handful of the holy offspring and some basic resources, you set off to create a cult worthy of your Lord.</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>
 			</parts>
