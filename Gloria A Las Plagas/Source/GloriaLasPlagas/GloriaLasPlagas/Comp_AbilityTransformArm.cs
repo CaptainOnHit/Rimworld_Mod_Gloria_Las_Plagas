@@ -55,15 +55,14 @@ namespace CCDevelopment.LasPlagas
 
             foreach(BodyPartRecord armPart in armParts)
             {
-                bool alreadyReplaced = pawn.health.hediffSet.hediffs.Any(hediff => hediff.Part == armPart && (hediff.def.defName == Props.newArmHediffBladeArm|| hediff.def.defName == Props.newArmHediffClawArm));
+                bool alreadyReplaced = pawn.health.hediffSet.hediffs.Any(hediff => hediff.Part == armPart && (hediff.def.defName == Props.newArmHediffBladeArm || hediff.def.defName == Props.newArmHediffClawArm));
                 if (alreadyReplaced) continue;
 
-                bool hasArtificialArm = pawn.health.hediffSet.hediffs.Any(hediff => hediff.Part == armPart && hediff.def.addedPartProps != null);
+                bool hasArtificialArm = pawn.health.hediffSet.hediffs.Any(hediff => hediff.Part == armPart && hediff.def.addedPartProps != null && hediff.def.defName != "CCDevelopment_LasPlagas_CrippledArm");
                 if (hasArtificialArm) continue;
                 return armPart; //returns missing arm
             }
-            return null; //if it end here arm is null ==> nor natural arm
-
+            return null; //if it end here arm is null ==> no natural arm
         }
 
 

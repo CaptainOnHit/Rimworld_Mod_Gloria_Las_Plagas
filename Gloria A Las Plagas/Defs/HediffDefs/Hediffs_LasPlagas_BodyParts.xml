@@ -10,7 +10,19 @@
 		<addedPartProps>
 			<partEfficiency>1</partEfficiency>
 		</addedPartProps>
+		<stages>
+			<li>
+				  <label>attached</label>
+				  <capMods>
+						<li>
+							<capacity>Talking</capacity>
+							<setMax>0</setMax>
+						</li>
+				  </capMods>
+			</li>
+		</stages>
 	</HediffDef>
+	
 	<HediffDef ParentName="AddedBodyPartBase">
 		<defName>CCDevelopment_LasPlagas_MandibulaHead</defName>
 		<label>mandibula head</label>
@@ -21,6 +33,17 @@
 		<addedPartProps>
 			<partEfficiency>1</partEfficiency>
 		</addedPartProps>
+		<stages>
+			<li>
+				  <label>attached</label>
+				  <capMods>
+						<li>
+							<capacity>Talking</capacity>
+							<setMax>0</setMax>
+						</li>
+				  </capMods>
+			</li>
+		</stages>
 	</HediffDef>
 	
 	<HediffDef ParentName="AddedBodyPartBase">
@@ -33,6 +56,9 @@
 		<addedPartProps>
 			<partEfficiency>1</partEfficiency>
 		</addedPartProps>
+		<abilities>
+			<li>CCDevelopment_LasPlagas_RetractTransformedArms</li>
+		</abilities>
 		<stages>
 			<li>
 				<statFactors>
@@ -118,6 +144,7 @@
 		</descriptionHyperlinks>
 		<abilities>
 			<li>CCDevelopment_LasPlagas_Bladelunge</li>
+			<li>CCDevelopment_LasPlagas_RetractTransformedArms</li>
 		</abilities>
 		<addedPartProps>
 			<partEfficiency>1</partEfficiency>
@@ -195,5 +222,28 @@
 			</drawData>
 		  </li>
 		</renderNodeProperties>
+	</HediffDef>
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>CCDevelopment_LasPlagas_CrippledArm</defName>
+		<label>crippled arm</label>
+		<description>This arm has been permanently mangled in the transformation process, it does not work as well as it once did.</description>
+		<descriptionHyperlinks>
+			<HediffDef>CCDevelopment_LasPlagas_BladeArm</HediffDef>
+			<HediffDef>CCDevelopment_LasPlagas_ClawArm</HediffDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
 	</HediffDef>
 </Defs>

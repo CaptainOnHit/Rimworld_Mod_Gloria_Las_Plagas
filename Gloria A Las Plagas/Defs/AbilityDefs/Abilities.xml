@@ -31,6 +31,40 @@
 	</AbilityDef>
 	
 	<AbilityDef>
+		<defName>CCDevelopment_LasPlagas_RetractTransformedArms</defName>
+		<label>retract transformed arms</label>
+		<description>Retract your monstrous arms, transforming them back into damaged human arms.</description>
+		<descriptionHyperlinks>
+			<HediffDef>CCDevelopment_LasPlagas_ClawArm</HediffDef>
+			<HediffDef>CCDevelopment_LasPlagas_BladeArm</HediffDef>
+		</descriptionHyperlinks>
+		<cooldownTicksRange>120000</cooldownTicksRange>
+		<iconPath>UI/Icons/Abilities/Retract_Arm_Ability_Icon</iconPath>
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		<stunTargetWhileCasting>false</stunTargetWhileCasting>
+		<ai_IsOffensive>false</ai_IsOffensive>
+		<aiCanUse>true</aiCanUse>
+		<targetRequired>false</targetRequired>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<range>-1</range>
+			<drawAimPie>true</drawAimPie>
+			<warmupTime>4</warmupTime>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetBloodfeeders>false</canTargetBloodfeeders>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetAnimals>false</canTargetAnimals>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CCDevelopment.LasPlagas.CompProperties_RetractTransformedArm"></li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef>
 		<defName>CCDevelopment_LasPlagas_TransformClaw</defName>
 		<label>transform monstrous (claw)</label>
 		<description>The Plaga Parasite erupts through one of the host's arms, replacing it with giant claw. Incapable of any form of work, but far deadlier for it.</description>
@@ -64,6 +98,7 @@
 			</li>
 		</comps>
 	</AbilityDef>
+	
 	<AbilityDef>
 		<defName>CCDevelopment_LasPlagas_TransformBlade</defName>
 		<label>transform monstrous (blade)</label>

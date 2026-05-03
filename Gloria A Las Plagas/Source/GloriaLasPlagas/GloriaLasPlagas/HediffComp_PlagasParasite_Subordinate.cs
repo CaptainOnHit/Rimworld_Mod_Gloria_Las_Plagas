@@ -10,9 +10,10 @@ namespace CCDevelopment.LasPlagas
 {
     public class HediffComp_PlagasParasite_Subordinate : HediffComp
     {
-        private const int daysUntilNextTier = 7;
-        private const int ticksPerDay = 60000;
-        private int nextTierTick;
+        private const int daysUntilNextTier = 1;
+        private const int ticksPerDay = 500;
+        private int plagaNextTierTick;
+        private HediffDef stopProgression = HediffDef.Named("CCDevelopment_LasPlagas_LasPlagasParasite_Progress_Stopped");
 
 
         public HediffCompProperties_PlagasParasite_Subordinate Props
@@ -25,7 +26,11 @@ namespace CCDevelopment.LasPlagas
             {
                 Pawn.genes?.SetXenotype(Props.currentStagePlagaXenotype);
             }
-            nextTierTick = Find.TickManager.TicksGame + (daysUntilNextTier * ticksPerDay);
+
+            if (plagaNextTierTick == 0)
+            {
+                plagaNextTierTick = Find.TickManager.TicksGame + (daysUntilNextTier * ticksPerDay);
+            }
             //only drop Headwear if Guadana or Mandibula
             if (Props.currentPlagaParasiteStage.defName == "CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier0") return;
             var apparelList = Pawn.apparel.WornApparel.Where(apperal => apperal.def.apparel.bodyPartGroups.Contains(BodyPartGroupDefOf.UpperHead) || apperal.def.apparel.bodyPartGroups.Contains(BodyPartGroupDefOf.FullHead)).ToList();
@@ -43,7 +48,8 @@ namespace CCDevelopment.LasPlagas
 
             if(Props.currentPlagaParasiteStage.defName != "CCDevelopment_LasPlagas_LasPlagasParasite_Subordinate_Tier2")
             {
-                if (Find.TickManager.TicksGame > nextTierTick)
+                if (Pawn.health.hediffSet.HasHediff(stopProgression)) return;
+                if (Find.TickManager.TicksGame > plagaNextTierTick)
                 {
                     AdvanceTier();
                 }
@@ -77,6 +83,12 @@ namespace CCDevelopment.LasPlagas
             );
             Pawn.health.AddHediff(newHediff);
             Pawn.health.RemoveHediff(parent);
+        }
+
+        public override void CompExposeData()
+        {
+            base.CompExposeData();
+            Scribe_Values.Look(ref plagaNextTierTick, "plagaNextTierTick", 0);
         }
     }
    

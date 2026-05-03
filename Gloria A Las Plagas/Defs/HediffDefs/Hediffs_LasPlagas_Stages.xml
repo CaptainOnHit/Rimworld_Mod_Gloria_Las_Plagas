@@ -77,4 +77,10 @@
 			</li>
 		</comps>
 	</HediffDef>
+	
+	<HediffDef>
+		<defName>CCDevelopment_LasPlagas_LasPlagasParasite_Progress_Stopped</defName>
+		<label>plaga Parasite (Progression Stopped)</label>
+		<description>The plaga parasite within this host has ceased to grow.</description>
+	</HediffDef>
 </Defs>

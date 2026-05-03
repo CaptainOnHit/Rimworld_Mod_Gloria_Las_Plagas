@@ -36,6 +36,7 @@ namespace CCDevelopment.LasPlagas
             filteredXenotypes.Add("CCDevelopment_LasPlagas_Guadana");
             filteredXenotypes.Add("CCDevelopment_LasPlagas_Mandibula");
             filteredXenotypes.Add("CCDevelopment_LasPlagas_Superior");
+            filteredXenotypes.Add("CCDevelopment_LasPlagas_Dominant");
         }
     }
 }

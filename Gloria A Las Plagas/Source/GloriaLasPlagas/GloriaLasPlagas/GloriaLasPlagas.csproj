@@ -63,10 +63,12 @@
     <Compile Include="CompProperties_AbilityGiveHediffPlagaOnly.cs" />
     <Compile Include="CompProperties_AbilityPlagaConvert.cs" />
     <Compile Include="CompProperties_AbilityTransformArm.cs" />
+    <Compile Include="CompProperties_RetractTransformedArm.cs" />
     <Compile Include="CompProperties_UseEffectFindEmber.cs" />
     <Compile Include="Comp_AbilityGiveHediffPlagaOnly.cs" />
     <Compile Include="Comp_AbilityPlagaConvert.cs" />
     <Compile Include="Comp_AbilityTransformArm.cs" />
+    <Compile Include="Comp_RetractTransformedArm.cs" />
     <Compile Include="Comp_UseEffect_FindEmber.cs" />
     <Compile Include="Gene_Dominant.cs" />
     <Compile Include="Gene_Superior.cs" />
@@ -93,6 +95,8 @@
     <Compile Include="HediffComp_LasPlagasTransform.cs" />
     <Compile Include="DefNameHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipeWorker_ContinueParasite.cs" />
+    <Compile Include="RecipeWorker_StopParasite.cs" />
     <Compile Include="RecipeWorker_RemoveParasite.cs" />
     <Compile Include="Recipe_AddHediff_PlagaCheck.cs" />
   </ItemGroup>
