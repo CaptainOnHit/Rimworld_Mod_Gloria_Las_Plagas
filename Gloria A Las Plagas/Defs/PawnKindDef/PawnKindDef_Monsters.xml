@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnKindDef>
+		<defName>CCDevelopment_LasPlagas_ElGigante</defName>
+		<label>el Gigante</label>
+		<race>CCDevelopment_LasPlagas_ElGigante</race>
+		<canMeleeAttack>true</canMeleeAttack>
+		<hostileToAll>true</hostileToAll>
+		<allowOldAgeInjuries>false</allowOldAgeInjuries>
+		<defaultFactionDef>Entities</defaultFactionDef>
+		<immuneToGameConditionEffects>true</immuneToGameConditionEffects>
+		<preventIdeo>true</preventIdeo>
+		<canStrip>false</canStrip>
+		<immuneToTraps>true</immuneToTraps>
+		<collidesWithPawns>false</collidesWithPawns>
+		<ignoresPainShock>true</ignoresPainShock>
+		<minGenerationAge>200</minGenerationAge>
+		<useFixedRotation>true</useFixedRotation>
+		<fixedRotation>South</fixedRotation>
+		<overrideDebugActionCategory>Entity</overrideDebugActionCategory>
+		<abilities>
+		  <li>EntitySkip</li>
+		  <li>Heatspikes</li>
+		  <li>FleshmelterBolt</li>
+		  <li>AgonyPulse</li>
+		</abilities>
+		<combatPower>800</combatPower>
+		<lifeStages>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>Things/Pawn/Nociosphere/Nociosphere_Center</texPath>
+			  <graphicClass>Graphic_Single</graphicClass>
+			  <drawSize>2</drawSize>
+			</bodyGraphicData>
+		  </li>
+		</lifeStages>
+	  </PawnKindDef>
+</Defs>

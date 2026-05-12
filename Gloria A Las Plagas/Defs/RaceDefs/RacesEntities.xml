@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Abstract="True" Name="GloriaALasPlagasMonsterBase" ParentName="BasePawn">
+		<hideStats>true</hideStats>
+		<hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+		<!-- Stats überall einzeln-->
+		<tradeability>None</tradeability>
+		<race>
+			<alwaysAwake>true</alwaysAwake>
+			<foodType>CarnivoreAnimal</foodType>
+			<hasCorpse>true</hasCorpse>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<lifeExpectancy>150</lifeExpectancy>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<trainability>None</trainability>
+
+		</race>
+		<!-- Anomaly Zeug -->
+	</ThingDef>
+	
+	<ThingDef ParentName="GloriaALasPlagasMonsterBase">
+		<defName>CCDevelopment_LasPlagas_ElGigante</defName>
+		<label>el Gigante</label>
+		<description>.</description>
+		<statBases>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<PsychicSensitivity>1</PsychicSensitivity>
+			<ArmorRating_Heat>2.00</ArmorRating_Heat>
+			<ArmorRating_Blunt>2.00</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+			<ToxicResistance>1.00</ToxicResistance>
+			<EMPResistance>0.50</EMPResistance>
+			<Flammability>1</Flammability>
+			<MeatAmount>10</MeatAmount>
+			<MoveSpeed>3</MoveSpeed>
+			<Mass>1000</Mass>
+			<PainShockThreshold>100</PainShockThreshold>
+			<InjuryHealingFactor>0</InjuryHealingFactor>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+		</statBases>
+			
+		<race>
+		    <renderTree>Nociosphere</renderTree>
+
+			<body>CCDevelopment_LasPlagas_ElGigante</body>
+			<baseBodySize>5</baseBodySize>
+			<baseHealthScale>10</baseHealthScale>
+			<lifeStageAges Inherit="False">
+				<li>
+				  <def>EntityFullyFormed</def>
+				  <soundCall>Pawn_Nociosphere_Call</soundCall>
+				  <soundWounded>Pawn_Nociosphere_Wounded</soundWounded>
+				  <soundAttack>Pawn_Nociosphere_Attack</soundAttack>
+				</li>
+			  </lifeStageAges>
+		</race>
+	
+	</ThingDef>
+	
+</Defs>

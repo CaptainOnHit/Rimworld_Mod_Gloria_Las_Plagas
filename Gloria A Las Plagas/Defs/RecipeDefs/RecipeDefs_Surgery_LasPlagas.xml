@@ -57,6 +57,7 @@
 		<descriptionHyperlinks>
 			<HediffDef>CCDevelopment_LasPlagas_Infection_Superior</HediffDef>
 		</descriptionHyperlinks>
+		<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
 		<workerClass>CCDevelopment.LasPlagas.Recipe_AddHediff_PlagaCheck</workerClass>
 		<addsHediff>CCDevelopment_LasPlagas_Infection_Superior</addsHediff>
 		<jobString>Infecting TargetA.</jobString>
@@ -105,6 +106,7 @@
 		<descriptionHyperlinks>
 			<HediffDef>CCDevelopment_LasPlagas_Infection_Dominant</HediffDef>
 		</descriptionHyperlinks>
+		<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
 		<workerClass>CCDevelopment.LasPlagas.Recipe_AddHediff_PlagaCheck</workerClass>
 		<addsHediff>CCDevelopment_LasPlagas_Infection_Dominant</addsHediff>
 		<jobString>Infecting TargetA.</jobString>
